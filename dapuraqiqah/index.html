@@ -1,1 +1,1214 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dapur Aqiqah Bandung - Cimahi | Layanan Aqiqah Syar'i, Enak & Praktis</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: {
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            600: '#059669',
+                            700: '#047857',
+                            800: '#065f46',
+                            900: '#064e3b',
+                        },
+                        gold: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        arabic: ['Amiri', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .arab-pattern {
+            background-color: #064e3b;
+            background-image: radial-gradient(#059669 0.75px, transparent 0.75px), radial-gradient(#059669 0.75px, #064e3b 0.75px);
+            background-size: 30px 30px;
+            background-position: 0 0, 15px 15px;
+        }
+        .text-shadow {
+            text-shadow: 0 2px 4px rgba(0,0,0,0.25);
+        }
+    </style>
+</head>
+<body class="font-sans bg-slate-50 text-slate-800 antialiased overflow-x-hidden">
 
+    <!-- 1. TOP BAR PROMO -->
+    <div class="bg-gradient-to-r from-emerald-900 via-emerald-800 to-emerald-900 text-white text-xs sm:text-sm py-2 px-4 shadow-sm border-b border-emerald-700/50">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-3 text-center sm:text-left">
+                <span class="bg-gold-500 text-emerald-950 font-bold px-2.5 py-0.5 rounded-full text-xs uppercase tracking-wide animate-pulse">PROMO SPESIAL</span>
+                <span class="font-medium text-emerald-100"><i class="fa-solid fa-truck-fast text-gold-400 mr-1.5"></i> Gratis Ongkir Se-Bandung Raya & Cimahi + Gratis Tester Food!</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-semibold">
+                <a href="tel:081234567890" class="hover:text-gold-400 transition-colors flex items-center gap-1.5">
+                    <i class="fa-solid fa-phone text-gold-400"></i> CS 1: 0812-3456-7890
+                </a>
+                <span class="text-emerald-500">|</span>
+                <a href="#testimoni" class="hover:text-gold-400 transition-colors flex items-center gap-1.5">
+                    <i class="fa-solid fa-star text-gold-400"></i> 4.9/5 (10.000+ Keluarga Puas)
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR STICKY -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-md transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-gradient-to-br from-emerald-600 to-emerald-800 rounded-2xl flex items-center justify-center shadow-lg shadow-emerald-700/30 text-white text-2xl border border-emerald-500/30">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-black tracking-tight text-emerald-900 leading-none">
+                            DAPUR <span class="text-gold-600">AQIQAH</span>
+                        </div>
+                        <p class="text-[11px] font-semibold text-emerald-700 uppercase tracking-wider mt-1">Bandung & Cimahi Terpercaya</p>
+                    </div>
+                </a>
+
+                <!-- Nav Links Desktop -->
+                <div class="hidden lg:flex items-center gap-7 font-medium text-sm text-slate-700">
+                    <a href="#beranda" class="hover:text-emerald-700 font-semibold text-emerald-700 transition">Beranda</a>
+                    <a href="#paket" class="hover:text-emerald-700 transition">Paket Aqiqah</a>
+                    <a href="#kalkulator" class="hover:text-emerald-700 transition">Simulasi Biaya</a>
+                    <a href="#keunggulan" class="hover:text-emerald-700 transition">Keunggulan</a>
+                    <a href="#cara-pesan" class="hover:text-emerald-700 transition">Cara Pesan</a>
+                    <a href="#testimoni" class="hover:text-emerald-700 transition">Testimoni</a>
+                    <a href="#faq" class="hover:text-emerald-700 transition">FAQ</a>
+                </div>
+
+                <!-- CTA Button Navbar -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Dapur%20Aqiqah,%20saya%20ingin%20konsultasi%20paket%20aqiqah" target="_blank" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-emerald-600 to-emerald-700 text-white font-bold text-sm shadow-md shadow-emerald-700/20 hover:from-emerald-700 hover:to-emerald-800 transition duration-200 flex items-center gap-2 transform hover:-translate-y-0.5">
+                        <i class="fa-brands fa-whatsapp text-lg text-emerald-200"></i>
+                        <span>Booking via WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Hamburger -->
+                <div class="lg:hidden flex items-center">
+                    <button id="mobileMenuBtn" class="p-2.5 rounded-xl bg-slate-100 text-slate-700 hover:text-emerald-700 focus:outline-none" aria-label="Buka Menu">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-3 pb-6 space-y-3 transition-all duration-300">
+            <a href="#beranda" class="mobile-nav-link block px-3 py-2 rounded-lg font-semibold text-emerald-700 bg-emerald-50">Beranda</a>
+            <a href="#paket" class="mobile-nav-link block px-3 py-2 rounded-lg text-slate-700 hover:bg-slate-50 font-medium">Paket Aqiqah</a>
+            <a href="#kalkulator" class="mobile-nav-link block px-3 py-2 rounded-lg text-slate-700 hover:bg-slate-50 font-medium">Simulasi Biaya</a>
+            <a href="#keunggulan" class="mobile-nav-link block px-3 py-2 rounded-lg text-slate-700 hover:bg-slate-50 font-medium">Keunggulan Kami</a>
+            <a href="#cara-pesan" class="mobile-nav-link block px-3 py-2 rounded-lg text-slate-700 hover:bg-slate-50 font-medium">Cara Order</a>
+            <a href="#testimoni" class="mobile-nav-link block px-3 py-2 rounded-lg text-slate-700 hover:bg-slate-50 font-medium">Testimoni</a>
+            <a href="#faq" class="mobile-nav-link block px-3 py-2 rounded-lg text-slate-700 hover:bg-slate-50 font-medium">Tanya Jawab (FAQ)</a>
+            <div class="pt-2">
+                <a href="https://wa.me/6281234567890?text=Halo%20Dapur%20Aqiqah,%20saya%20mau%20tanya%20paket%20aqiqah" target="_blank" class="w-full text-center py-3 rounded-xl bg-emerald-600 text-white font-bold text-sm shadow-md flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Hubungi Customer Service
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 3. HERO SECTION -->
+    <header id="beranda" class="relative overflow-hidden bg-gradient-to-b from-emerald-950 via-emerald-900 to-emerald-950 text-white pt-12 pb-24 md:py-20 arab-pattern">
+        <!-- Glow Orbs Background -->
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-emerald-500/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-gold-500/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <!-- Kolom Teks -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-emerald-800/80 border border-emerald-600/50 text-emerald-200 text-xs sm:text-sm font-semibold shadow-inner">
+                        <i class="fa-solid fa-certificate text-gold-400"></i>
+                        <span>Pelopor Layanan Aqiqah Syar'i & Higienis Sejak 2011</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Layanan Aqiqah <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 to-amber-300">Syar'i, Lezat & Praktis</span> di Bandung - Cimahi
+                    </h1>
+
+                    <p class="text-slate-300 text-base sm:text-lg md:text-xl font-normal leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        Mudahkan ibadah sunnah sang buah hati tanpa repot. Daging empuk higienis, <strong>100% bebas bau prengus</strong>, dokumentasi pemotongan lengkap, dan gratis antar tepat waktu sampai ke depan pintu rumah Anda.
+                    </p>
+
+                    <!-- Trust Points Grid -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-left text-xs sm:text-sm font-medium">
+                        <div class="flex items-center gap-2 bg-emerald-900/60 p-2.5 rounded-xl border border-emerald-700/40">
+                            <i class="fa-solid fa-check-circle text-gold-400 text-base"></i>
+                            <span>Sertifikat & Risalah</span>
+                        </div>
+                        <div class="flex items-center gap-2 bg-emerald-900/60 p-2.5 rounded-xl border border-emerald-700/40">
+                            <i class="fa-solid fa-check-circle text-gold-400 text-base"></i>
+                            <span>Bisa Saksikan Sembelih</span>
+                        </div>
+                        <div class="flex items-center gap-2 bg-emerald-900/60 p-2.5 rounded-xl border border-emerald-700/40 col-span-2 sm:col-span-1">
+                            <i class="fa-solid fa-check-circle text-gold-400 text-base"></i>
+                            <span>Bisa Bayar di Tempat (COD)</span>
+                        </div>
+                    </div>
+
+                    <!-- Call To Action -->
+                    <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="https://wa.me/6281234567890?text=Bismillah,%20saya%20ingin%20konsultasi%20paket%20aqiqah%20di%20Dapur%20Aqiqah%20Bandung" target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-gold-500 to-amber-500 hover:from-gold-600 hover:to-amber-600 text-emerald-950 font-extrabold text-base shadow-lg shadow-gold-500/25 flex items-center justify-center gap-3 transform hover:-translate-y-1 transition duration-200">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                            <span>Konsultasi & Tester Gratis</span>
+                        </a>
+                        <a href="#paket" class="w-full sm:w-auto px-7 py-4 rounded-full bg-emerald-900/80 hover:bg-emerald-800 text-white font-bold text-base border border-emerald-600/60 flex items-center justify-center gap-2 transition duration-200">
+                            <i class="fa-solid fa-receipt text-gold-400"></i>
+                            <span>Lihat Daftar Harga</span>
+                        </a>
+                    </div>
+
+                    <!-- Social Proof Counter -->
+                    <div class="pt-4 flex items-center justify-center lg:justify-start gap-4 text-xs sm:text-sm text-slate-300">
+                        <div class="flex -space-x-2">
+                            <div class="w-9 h-9 rounded-full bg-amber-400 border-2 border-emerald-950 flex items-center justify-center text-emerald-950 font-bold text-xs">BP</div>
+                            <div class="w-9 h-9 rounded-full bg-emerald-400 border-2 border-emerald-950 flex items-center justify-center text-emerald-950 font-bold text-xs">RM</div>
+                            <div class="w-9 h-9 rounded-full bg-cyan-400 border-2 border-emerald-950 flex items-center justify-center text-emerald-950 font-bold text-xs">DA</div>
+                            <div class="w-9 h-9 rounded-full bg-rose-400 border-2 border-emerald-950 flex items-center justify-center text-emerald-950 font-bold text-xs">FA</div>
+                        </div>
+                        <div>
+                            <div class="flex text-gold-400 text-xs">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="font-medium text-slate-200">Rating 4.9 dari <strong>15.200+ Ayah & Bunda</strong> di Bandung Raya</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kolom Card Visual / Dalil Aqiqah -->
+                <div class="lg:col-span-5">
+                    <div class="bg-gradient-to-b from-white/10 to-white/5 backdrop-blur-md p-6 sm:p-8 rounded-3xl border border-white/20 shadow-2xl relative">
+                        <!-- Badge Syari -->
+                        <div class="absolute -top-4 right-6 bg-gold-500 text-emerald-950 text-xs font-black uppercase px-4 py-1.5 rounded-full shadow-md tracking-wider">
+                            Sunnah Muakkadah
+                        </div>
+
+                        <!-- Card Header -->
+                        <div class="text-center pb-4 border-b border-white/10">
+                            <span class="text-gold-400 font-arabic text-2xl block mb-1">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</span>
+                            <h3 class="text-xl font-bold text-white tracking-wide">Dalil Pensyariatan Aqiqah</h3>
+                        </div>
+
+                        <!-- Arabic Quote -->
+                        <div class="my-5 p-4 bg-emerald-900/60 rounded-2xl border border-emerald-700/50">
+                            <p class="font-arabic text-right text-lg sm:text-xl text-emerald-100 leading-relaxed dir-rtl">
+                                كُلُّ غُلاَمٍ رَهِينَةٌ بِعَقِيقَتِهِ تُذْبَحُ عَنْهُ يَوْمَ سَابِعِهِ وَيُحْلَقُ وَيُسَمَّى
+                            </p>
+                            <p class="text-xs sm:text-sm text-slate-300 mt-3 italic leading-normal">
+                                "Setiap anak tergadaikan dengan aqiqahnya, disembelihkan untuknya pada hari ketujuh, dicukur rambutnya dan diberi nama."
+                            </p>
+                            <span class="block text-right text-[11px] font-semibold text-gold-400 mt-2">
+                                (HR. Abu Dawud No. 2838 & At-Tirmidzi No. 1522, Shahih)
+                            </span>
+                        </div>
+
+                        <!-- Quick Fact -->
+                        <div class="grid grid-cols-2 gap-3 text-center pt-2">
+                            <div class="bg-white/5 p-3 rounded-2xl border border-white/10">
+                                <span class="text-2xl font-bold text-gold-400 block mb-0.5">2 Ekor</span>
+                                <span class="text-xs text-slate-300 font-medium">Kambing untuk Bayi Laki-laki</span>
+                            </div>
+                            <div class="bg-white/5 p-3 rounded-2xl border border-white/10">
+                                <span class="text-2xl font-bold text-gold-400 block mb-0.5">1 Ekor</span>
+                                <span class="text-xs text-slate-300 font-medium">Kambing untuk Bayi Perempuan</span>
+                            </div>
+                        </div>
+
+                        <!-- Mini CTA Tester -->
+                        <div class="mt-6 text-center">
+                            <a href="https://wa.me/6281234567890?text=Halo%20Dapur%20Aqiqah,%20saya%20mau%20request%20Free%20Tester%20Makanan%20ke%20rumah" target="_blank" class="inline-flex items-center gap-2 text-xs font-bold text-gold-400 hover:text-gold-300 underline underline-offset-4 transition">
+                                <i class="fa-solid fa-utensils"></i> Mau Coba Rasa Dulu? Minta Tester Gratis Dikirim ke Rumah
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 4. STATS BAR -->
+    <section class="relative -mt-10 max-w-6xl mx-auto px-4 z-20">
+        <div class="bg-white rounded-2xl shadow-xl border border-slate-100 p-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="border-r border-slate-100 last:border-none">
+                <div class="text-3xl md:text-4xl font-extrabold text-emerald-700">12+</div>
+                <div class="text-xs sm:text-sm text-slate-600 font-medium mt-1">Tahun Pengalaman</div>
+            </div>
+            <div class="border-r border-slate-100 last:border-none">
+                <div class="text-3xl md:text-4xl font-extrabold text-emerald-700">18.500+</div>
+                <div class="text-xs sm:text-sm text-slate-600 font-medium mt-1">Kambing Disembelih</div>
+            </div>
+            <div class="border-r border-slate-100 last:border-none">
+                <div class="text-3xl md:text-4xl font-extrabold text-emerald-700">100%</div>
+                <div class="text-xs sm:text-sm text-slate-600 font-medium mt-1">Syar'i & Higienis</div>
+            </div>
+            <div>
+                <div class="text-3xl md:text-4xl font-extrabold text-gold-600">Free</div>
+                <div class="text-xs sm:text-sm text-slate-600 font-medium mt-1">Ongkir Se-Bandung Raya</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. KATALOG PAKET AQIQAH LENGKAP DENGAN FILTER TAB -->
+    <section id="paket" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-100/80 px-4 py-1.5 rounded-full">Menu Olahan Khas Sunda & Timur Tengah</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">Pilihan Paket Aqiqah Terfavorit</h2>
+                <p class="text-slate-600 text-sm sm:text-base mt-3">
+                    Disembelih oleh juru sembelih halal bersertifikat, dimasak higienis dengan bumbu rempah pilihan tanpa bau prengus. Siap santap atau dikemas dalam dus eksklusif!
+                </p>
+
+                <!-- Filter Tabs -->
+                <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mt-8" id="categoryTabs">
+                    <button onclick="filterCategory('nikmat')" id="tab-nikmat" class="cat-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold bg-emerald-700 text-white shadow-md transition">
+                        <i class="fa-solid fa-fire mr-1.5 text-gold-400"></i> Paket Nikmat (Sate & Gulai)
+                    </button>
+                    <button onclick="filterCategory('kebuli')" id="tab-kebuli" class="cat-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 transition">
+                        <i class="fa-solid fa-bowl-rice mr-1.5 text-gold-600"></i> Nasi Kebuli Sultan
+                    </button>
+                    <button onclick="filterCategory('mantap')" id="tab-mantap" class="cat-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 transition">
+                        <i class="fa-solid fa-box-archive mr-1.5 text-emerald-600"></i> Paket Mantap (Rendang/Semur)
+                    </button>
+                    <button onclick="filterCategory('guling')" id="tab-guling" class="cat-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 transition">
+                        <i class="fa-solid fa-drumstick-bite mr-1.5 text-red-500"></i> Kambing Guling
+                    </button>
+                </div>
+            </div>
+
+            <!-- Grid Kartu Paket -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="packageCardsContainer">
+
+                <!-- Card 1: Paket Nikmat A (Paket Sate & Gulai) -->
+                <div class="package-card nikmat bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-lg hover:shadow-xl transition flex flex-col justify-between relative group">
+                    <div class="bg-gradient-to-r from-emerald-800 to-emerald-900 text-white p-5 text-center relative">
+                        <span class="absolute top-3 right-3 bg-gold-500 text-emerald-950 font-black text-[10px] px-2.5 py-1 rounded-full uppercase">PALING LARIS</span>
+                        <h3 class="text-xl font-bold">Paket Nikmat A</h3>
+                        <p class="text-xs text-emerald-200 mt-1">Menu: Sate Daging Empuk + Gulai Bumbu Medok</p>
+                    </div>
+
+                    <div class="p-6 flex-1 space-y-4">
+                        <div class="text-center pb-4 border-b border-slate-100">
+                            <span class="text-xs text-slate-500 font-medium">Mulai Dari (1 Ekor Betina)</span>
+                            <div class="text-3xl font-extrabold text-emerald-800 mt-0.5">Rp 1.780.000</div>
+                            <span class="text-xs font-semibold text-gold-700 bg-gold-50 px-2 py-0.5 rounded-md inline-block mt-1">Tersedia Kambing Jantan & Betina</span>
+                        </div>
+
+                        <!-- Perbandingan Laki/Perempuan -->
+                        <div class="bg-slate-50 p-3 rounded-2xl text-xs space-y-2 border border-slate-100">
+                            <div class="flex justify-between font-semibold text-slate-700">
+                                <span><i class="fa-solid fa-venus text-pink-500 mr-1"></i> Perempuan (1 Ekor):</span>
+                                <span class="text-emerald-800">200 Tusuk Sate + 50 Porsi Gulai</span>
+                            </div>
+                            <div class="flex justify-between font-semibold text-slate-700">
+                                <span><i class="fa-solid fa-mars text-blue-500 mr-1"></i> Laki-laki (2 Ekor):</span>
+                                <span class="text-emerald-800">400 Tusuk Sate + 100 Porsi Gulai</span>
+                            </div>
+                        </div>
+
+                        <ul class="space-y-2.5 text-xs text-slate-600">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-sm"></i> <span>Daging dijamin empuk dan <strong>tidak bau prengus</strong></span></li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-sm"></i> <span>Acar segar, bumbu kecap pedas, dan kerupuk</span></li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-sm"></i> <span><strong>Free Gulai Kepala & Kaki</strong> senilai Rp 150.000</span></li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-sm"></i> <span>Sertifikat Aqiqah + Pigura + Risalah</span></li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-sm"></i> <span>Free Dokumentasi Foto & Video Sembelih</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="p-6 pt-0">
+                        <a href="https://wa.me/6281234567890?text=Halo%20Dapur%20Aqiqah,%20saya%20tertarik%20dengan%20Paket%20Nikmat%20A%20(Sate%20%26%20Gulai)" target="_blank" class="w-full py-3 rounded-2xl bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-sm shadow-md flex items-center justify-center gap-2 transition">
+                            <i class="fa-brands fa-whatsapp text-lg"></i> Pesan Paket Nikmat A
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2: Paket Nikmat Bento Komplit -->
+                <div class="package-card nikmat bg-white rounded-3xl border-2 border-emerald-600 overflow-hidden shadow-xl flex flex-col justify-between relative transform lg:-translate-y-2">
+                    <div class="bg-gradient-to-r from-emerald-700 to-teal-800 text-white p-5 text-center relative">
+                        <span class="absolute top-3 right-3 bg-gold-400 text-emerald-950 font-black text-[10px] px-2.5 py-1 rounded-full uppercase shadow">REKOMENDASI AYAH BUNDA</span>
+                        <h3 class="text-xl font-bold">Paket Bento Nikmat (Dus Praktis)</h3>
+                        <p class="text-xs text-emerald-100 mt-1">Siap Bagi ke Tetangga & Kerabat Tanpa Repot</p>
+                    </div>
+
+                    <div class="p-6 flex-1 space-y-4">
+                        <div class="text-center pb-4 border-b border-slate-100">
+                            <span class="text-xs text-slate-500 font-medium">Paket 1 Kambing + 50 Box Bento Mewah</span>
+                            <div class="text-3xl font-extrabold text-emerald-800 mt-0.5">Rp 2.450.000</div>
+                            <span class="text-xs font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full inline-block mt-1">Dus Sekat Bento Tebal + Sendok Tisu</span>
+                        </div>
+
+                        <div class="bg-slate-50 p-3 rounded-2xl text-xs space-y-2 border border-slate-100">
+                            <div class="font-semibold text-slate-800">Isi Tiap Dus Bento:</div>
+                            <p class="text-slate-600">Nasi Putih Pulen, 4 Tusuk Sate/Teriyaki, 1 Cup Gulai Daging, Sambal Goreng Kentang Ati, Kerupuk, Acar, Pisang/Buah, & Lembar Doa Aqiqah Nama Bayi.</p>
+                        </div>
+
+                        <ul class="space-y-2.5 text-xs text-slate-600">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-sm"></i> <span>Custom Ucapan & Foto Anak di tiap box dus</span></li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-sm"></i> <span>Dus tebal eksklusif higienis & anti tumpah</span></li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-sm"></i> <span>Bonus Tumbler Eksklusif Dapur Aqiqah</span></li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-sm"></i> <span>Free Ongkir Tepat Waktu Sampai Alamat</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="p-6 pt-0">
+                        <a href="https://wa.me/6281234567890?text=Halo%20Dapur%20Aqiqah,%20saya%20mau%20order%20Paket%20Bento%20Nikmat%2050%20Box" target="_blank" class="w-full py-3.5 rounded-2xl bg-gradient-to-r from-gold-500 to-amber-500 hover:from-gold-600 hover:to-amber-600 text-emerald-950 font-extrabold text-sm shadow-md flex items-center justify-center gap-2 transition">
+                            <i class="fa-brands fa-whatsapp text-lg"></i> Pesan Bento Praktis Sekarang
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3: Paket Kebuli Sultan -->
+                <div class="package-card kebuli bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-lg hover:shadow-xl transition flex flex-col justify-between relative">
+                    <div class="bg-gradient-to-r from-amber-800 to-amber-950 text-white p-5 text-center relative">
+                        <span class="absolute top-3 right-3 bg-gold-400 text-amber-950 font-black text-[10px] px-2.5 py-1 rounded-full uppercase">KHAS TIMUR TENGAH</span>
+                        <h3 class="text-xl font-bold">Paket Nasi Kebuli Sultan</h3>
+                        <p class="text-xs text-amber-200 mt-1">Beras Basmati Asli & Kambing Bakar Rempah</p>
+                    </div>
+
+                    <div class="p-6 flex-1 space-y-4">
+                        <div class="text-center pb-4 border-b border-slate-100">
+                            <span class="text-xs text-slate-500 font-medium">Mulai Dari (50 Porsi Kebuli)</span>
+                            <div class="text-3xl font-extrabold text-emerald-800 mt-0.5">Rp 2.850.000</div>
+                            <span class="text-xs font-semibold text-amber-800 bg-amber-50 px-2 py-0.5 rounded-md inline-block mt-1">Opsi Box Bento / Nampan Loyang Sultan</span>
+                        </div>
+
+                        <div class="bg-slate-50 p-3 rounded-2xl text-xs space-y-2 border border-slate-100">
+                            <div class="font-semibold text-slate-800">Kelezatan Sultan:</div>
+                            <p class="text-slate-600">Nasi Kebuli Beras Basmati wangi rempah kapulaga, Kambing Bakar Madu / Rempah, Sambal Marag, Acar Arab Nanas, dan Emping Renyah.</p>
+                        </div>
+
+                        <ul class="space-y-2.5 text-xs text-slate-600">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-sm"></i> <span>Beras Basmati impor bulir panjang premium</span></li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-sm"></i> <span>Porsi banyak dan bumbu rempah melimpah</span></li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-sm"></i> <span>Sertifikat Aqiqah Berbingkai Emas</span></li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-sm"></i> <span>Free Test Food Sebelum Order</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="p-6 pt-0">
+                        <a href="https://wa.me/6281234567890?text=Halo%20Dapur%20Aqiqah,%20saya%20mau%20pesan%20Paket%20Nasi%20Kebuli%20Sultan" target="_blank" class="w-full py-3 rounded-2xl bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-sm shadow-md flex items-center justify-center gap-2 transition">
+                            <i class="fa-brands fa-whatsapp text-lg"></i> Pesan Nasi Kebuli Sultan
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 4: Paket Mantap (Rendang / Semur / Teriyaki) -->
+                <div class="package-card mantap bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-lg hover:shadow-xl transition flex flex-col justify-between relative hidden">
+                    <div class="bg-gradient-to-r from-emerald-800 to-emerald-900 text-white p-5 text-center relative">
+                        <span class="absolute top-3 right-3 bg-emerald-500 text-white font-bold text-[10px] px-2.5 py-1 rounded-full uppercase">HEMAT EKONOMIS</span>
+                        <h3 class="text-xl font-bold">Paket Mantap (Rendang / Semur)</h3>
+                        <p class="text-xs text-emerald-200 mt-1">Pilihan Daging Olahan Tanpa Tusuk Sate</p>
+                    </div>
+
+                    <div class="p-6 flex-1 space-y-4">
+                        <div class="text-center pb-4 border-b border-slate-100">
+                            <span class="text-xs text-slate-500 font-medium">Mulai Dari (1 Kambing Betina)</span>
+                            <div class="text-3xl font-extrabold text-emerald-800 mt-0.5">Rp 1.670.000</div>
+                            <span class="text-xs font-semibold text-slate-600 bg-slate-100 px-2 py-0.5 rounded-md inline-block mt-1">Cocok untuk acara tasyakuran santai</span>
+                        </div>
+
+                        <div class="bg-slate-50 p-3 rounded-2xl text-xs space-y-2 border border-slate-100">
+                            <div class="font-semibold text-slate-800">Pilihan Masakan Daging:</div>
+                            <p class="text-slate-600">Bisa dipilih: Rendang Kambing Padang, Semur Kambing Legit, atau Kambing Teriyaki Manis Gurih + Gulai/Sop Balungan.</p>
+                        </div>
+
+                        <ul class="space-y-2.5 text-xs text-slate-600">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-sm"></i> <span>Daging diolah matang sempurna hingga empuk</span></li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-sm"></i> <span>Sertifikat Aqiqah + Bingkai Eksklusif</span></li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-sm"></i> <span>Free Dokumentasi Penyembelihan Lengkap</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="p-6 pt-0">
+                        <a href="https://wa.me/6281234567890?text=Halo%20Dapur%20Aqiqah,%20saya%20ingin%20tanya%20Paket%20Mantap%20(Rendang/Semur)" target="_blank" class="w-full py-3 rounded-2xl bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-sm shadow-md flex items-center justify-center gap-2 transition">
+                            <i class="fa-brands fa-whatsapp text-lg"></i> Pesan Paket Mantap
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 5: Kambing Guling Live BBQ -->
+                <div class="package-card guling bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-lg hover:shadow-xl transition flex flex-col justify-between relative hidden">
+                    <div class="bg-gradient-to-r from-red-900 to-rose-950 text-white p-5 text-center relative">
+                        <span class="absolute top-3 right-3 bg-red-500 text-white font-bold text-[10px] px-2.5 py-1 rounded-full uppercase">LIVE COOKING SHOW</span>
+                        <h3 class="text-xl font-bold">Kambing Guling Spesial</h3>
+                        <p class="text-xs text-rose-200 mt-1">Lengkap dengan Chef & Alat Bakaran di Lokasi Acara</p>
+                    </div>
+
+                    <div class="p-6 flex-1 space-y-4">
+                        <div class="text-center pb-4 border-b border-slate-100">
+                            <span class="text-xs text-slate-500 font-medium">Mulai Dari (Porsi 40-50 Orang)</span>
+                            <div class="text-3xl font-extrabold text-emerald-800 mt-0.5">Rp 1.950.000</div>
+                            <span class="text-xs font-semibold text-rose-800 bg-rose-50 px-2 py-0.5 rounded-md inline-block mt-1">Cocok untuk Resepsi & Halalbihalal</span>
+                        </div>
+
+                        <div class="bg-slate-50 p-3 rounded-2xl text-xs space-y-2 border border-slate-100">
+                            <div class="font-semibold text-slate-800">Fasilitas Lengkap:</div>
+                            <p class="text-slate-600">Termasuk 1 Waiter/Chef pemotong, meja saji, pemanas chafing dish, sambal kecap pedas, lontong/nasi, dan piring kertas.</p>
+                        </div>
+
+                        <ul class="space-y-2.5 text-xs text-slate-600">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-sm"></i> <span>Daging empuk juicy berkulit krispi gurih</span></li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-sm"></i> <span>Bisa diantar utuh matang atau live bbq di tempat</span></li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-sm"></i> <span>Bonus Gulai Kepala & Kaki Lezat</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="p-6 pt-0">
+                        <a href="https://wa.me/6281234567890?text=Halo%20Dapur%20Aqiqah,%20saya%20tertarik%20dengan%20Kambing%20Guling%20Live" target="_blank" class="w-full py-3 rounded-2xl bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-sm shadow-md flex items-center justify-center gap-2 transition">
+                            <i class="fa-brands fa-whatsapp text-lg"></i> Pesan Kambing Guling
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Catatan Bonus Lengkap -->
+            <div class="mt-12 bg-emerald-50 rounded-2xl p-6 border border-emerald-200">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-emerald-600 text-white rounded-2xl flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-solid fa-gift"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-emerald-900 text-base">Semua Paket Aqiqah Dapur Aqiqah Mendapatkan:</h4>
+                            <p class="text-xs sm:text-sm text-emerald-700">Sertifikat Aqiqah + Pigura Kaca Cantik, Risalah Aqiqah, Lembar Doa Sembelih, Dokumentasi Sembelih (Foto & Video), & Free Ongkir Se-Bandung Raya.</p>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20boleh%20minta%20pricelist%20PDF%20lengkap%20semua%20paket?" target="_blank" class="shrink-0 px-5 py-2.5 rounded-full bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold transition flex items-center gap-2">
+                        <i class="fa-solid fa-download"></i> Unduh Brosur PDF Lengkap
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. KALKULATOR INTERAKTIF ESTIMASI BIAYA AQIQAH -->
+    <section id="kalkulator" class="py-16 bg-white border-y border-slate-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <div class="bg-gradient-to-br from-emerald-900 to-teal-950 text-white rounded-3xl p-6 sm:p-10 shadow-2xl relative overflow-hidden">
+                <!-- Background decoration -->
+                <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-gold-500/10 rounded-full blur-3xl"></div>
+
+                <div class="text-center max-w-2xl mx-auto mb-8">
+                    <span class="text-xs font-extrabold uppercase tracking-widest text-gold-400 bg-gold-950/60 border border-gold-500/30 px-3.5 py-1 rounded-full">Hitung Cepat & Transparan</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold mt-2">Kalkulator Simulasi Biaya Aqiqah</h2>
+                    <p class="text-xs sm:text-sm text-slate-300 mt-2">Sesuaikan dengan jenis kelamin buah hati, selera menu masakan, dan estimasi porsi tamu undangan Anda.</p>
+                </div>
+
+                <div class="grid md:grid-cols-12 gap-8 items-center">
+                    <!-- Form Kontrol -->
+                    <div class="md:col-span-7 space-y-5 bg-white/5 p-5 sm:p-6 rounded-2xl border border-white/10 backdrop-blur-sm">
+                        <!-- Jenis Kelamin Anak -->
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">1. Jenis Kelamin Buah Hati</label>
+                            <div class="grid grid-cols-2 gap-3">
+                                <label class="gender-btn flex items-center justify-center gap-2 p-3 rounded-xl border border-white/20 cursor-pointer transition hover:bg-white/10 text-xs sm:text-sm font-bold active-gender bg-emerald-700 text-white">
+                                    <input type="radio" name="gender" value="perempuan" checked class="hidden" onchange="calculateAqiqah()">
+                                    <i class="fa-solid fa-venus text-pink-300"></i> Perempuan (1 Kambing)
+                                </label>
+                                <label class="gender-btn flex items-center justify-center gap-2 p-3 rounded-xl border border-white/20 cursor-pointer transition hover:bg-white/10 text-xs sm:text-sm font-bold text-slate-300">
+                                    <input type="radio" name="gender" value="laki" class="hidden" onchange="calculateAqiqah()">
+                                    <i class="fa-solid fa-mars text-blue-300"></i> Laki-laki (2 Kambing)
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Jenis Kelamin Hewan -->
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">2. Pilihan Jenis Hewan</label>
+                            <div class="grid grid-cols-2 gap-3">
+                                <select id="animalType" class="w-full bg-emerald-950 border border-emerald-700 text-white text-xs sm:text-sm rounded-xl p-3 focus:outline-none focus:border-gold-400" onchange="calculateAqiqah()">
+                                    <option value="betina">Kambing/Domba Betina (Sesuai Syariat - Hemat)</option>
+                                    <option value="jantan">Kambing/Domba Jantan (Lebih Afdhol & Daging Banyak)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Jenis Menu Makanan -->
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">3. Menu Masakan Utama</label>
+                            <select id="menuType" class="w-full bg-emerald-950 border border-emerald-700 text-white text-xs sm:text-sm rounded-xl p-3 focus:outline-none focus:border-gold-400" onchange="calculateAqiqah()">
+                                <option value="sate_gulai">Sate Daging & Gulai Kambing (Terpopuler)</option>
+                                <option value="rendang_sop">Rendang Padang & Sop Balungan</option>
+                                <option value="kebuli">Nasi Kebuli Basmati Sultan + Kambing Bakar</option>
+                            </select>
+                        </div>
+
+                        <!-- Jumlah Box Nasi -->
+                        <div>
+                            <div class="flex justify-between items-center mb-1">
+                                <label class="text-xs font-bold uppercase tracking-wider text-slate-300">4. Jumlah Nasi Box Bento</label>
+                                <span class="text-gold-400 font-extrabold text-sm" id="boxCountDisplay">50 Box</span>
+                            </div>
+                            <input type="range" id="boxSlider" min="0" max="250" step="10" value="50" class="w-full h-2 bg-emerald-950 rounded-lg appearance-none cursor-pointer accent-gold-500" oninput="updateBoxDisplay(); calculateAqiqah()">
+                            <div class="flex justify-between text-[10px] text-slate-400 mt-1">
+                                <span>Tanpa Box (Masak Saja)</span>
+                                <span>50 Box</span>
+                                <span>100 Box</span>
+                                <span>250 Box</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Output Ringkasan Biaya -->
+                    <div class="md:col-span-5 bg-gradient-to-b from-white/10 to-white/5 p-6 rounded-2xl border border-white/20 text-center flex flex-col justify-between h-full">
+                        <div>
+                            <div class="text-xs uppercase font-bold text-slate-300 tracking-wider">Estimasi Total Biaya:</div>
+                            <div class="text-3xl sm:text-4xl font-black text-gold-400 my-2" id="totalPriceDisplay">
+                                Rp 2.450.000
+                            </div>
+                            <p class="text-xs text-emerald-200" id="calcSummaryDetail">
+                                1 Ekor Kambing Betina + 50 Nasi Box Sate & Gulai
+                            </p>
+                        </div>
+
+                        <div class="my-4 py-3 border-y border-white/10 text-left text-xs space-y-1.5 text-slate-200">
+                            <div class="flex justify-between">
+                                <span>Kambing Aqiqah:</span>
+                                <span class="font-bold" id="detailHewan">Rp 1.450.000</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Jasa Masak & Bumbu:</span>
+                                <span class="font-bold text-emerald-300">Gratis / Termasuk</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Nasi Box Bento (Lengkap):</span>
+                                <span class="font-bold" id="detailBox">Rp 1.000.000 (50 x Rp 20rb)</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Biaya Pengiriman (Bandung):</span>
+                                <span class="font-bold text-gold-400">Rp 0 (GRATIS)</span>
+                            </div>
+                        </div>
+
+                        <button onclick="orderViaCalc()" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-gold-500 to-amber-500 text-emerald-950 font-extrabold text-sm shadow-lg hover:from-gold-600 hover:to-amber-600 transition flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Booking Hasil Simulasi Ini</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. 6 KEUNGGULAN UTAMA (MENGAPA MEMILIH KAMI) -->
+    <section id="keunggulan" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-100/80 px-4 py-1.5 rounded-full">Garansi Kepuasan Keluarga</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">Mengapa 15.000+ Keluarga Memilih Dapur Aqiqah?</h2>
+                <p class="text-slate-600 text-sm sm:text-base mt-2">
+                    Kami memahami bahwa aqiqah adalah ibadah seumur hidup sekali untuk sang buah hati. Kami menjaga setiap detail agar sah secara syar'i dan membanggakan di hadapan para tamu.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Keunggulan 1 -->
+                <div class="bg-white p-7 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                    <div class="w-14 h-14 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-2xl mb-5">
+                        <i class="fa-solid fa-kaaba"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">100% Sesuai Syariat Islam</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Kambing cukup umur (poel), sehat tanpa cacat, disembelih oleh Juleha (Juru Sembelih Halal) bersertifikat dengan menyebut nama bayi Anda secara syar'i.
+                    </p>
+                </div>
+
+                <!-- Keunggulan 2 -->
+                <div class="bg-white p-7 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                    <div class="w-14 h-14 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center text-2xl mb-5">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Bebas Bau Prengus & Empuk</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Teknik pengolahan koki profesional berpengalaman 10+ tahun dengan bumbu rempah melimpah. Daging lembut lumer di lidah, disukai anak-anak hingga kakek nenek.
+                    </p>
+                </div>
+
+                <!-- Keunggulan 3 -->
+                <div class="bg-white p-7 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                    <div class="w-14 h-14 rounded-2xl bg-blue-100 text-blue-700 flex items-center justify-center text-2xl mb-5">
+                        <i class="fa-solid fa-video"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Bisa Disaksikan & Live Video</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Ayah & Bunda dipersilakan datang langsung ke kandang/RPH kami di Bandung untuk menyaksikan, atau kami kirimkan video & foto resolusi tinggi saat pemotongan.
+                    </p>
+                </div>
+
+                <!-- Keunggulan 4 -->
+                <div class="bg-white p-7 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                    <div class="w-14 h-14 rounded-2xl bg-rose-100 text-rose-700 flex items-center justify-center text-2xl mb-5">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Gratis Antar Tepat Waktu</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Armada pengiriman siap mengantar ke seluruh wilayah Kota Bandung, Kab. Bandung, Cimahi, dan Padalarang dalam kondisi hangat dan rapi sebelum acara dimulai.
+                    </p>
+                </div>
+
+                <!-- Keunggulan 5 -->
+                <div class="bg-white p-7 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-100 text-purple-700 flex items-center justify-center text-2xl mb-5">
+                        <i class="fa-solid fa-bowl-food"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Gratis Tester Makanan</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Ragu dengan rasanya? Kami kirimkan sampel makanan (Free Tester) langsung ke alamat rumah Anda secara cuma-cuma sebelum Ayah Bunda memutuskan memesan!
+                    </p>
+                </div>
+
+                <!-- Keunggulan 6 -->
+                <div class="bg-white p-7 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                    <div class="w-14 h-14 rounded-2xl bg-emerald-100 text-emerald-800 flex items-center justify-center text-2xl mb-5">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Amanah & Bisa Bayar COD</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Transaksi aman dan bebas was-was. Anda bisa membayar uang muka (DP) ringan atau bayar lunas langsung saat pesanan tiba di rumah (COD).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. ALUR PEMESANAN 4 LANGKAH MUDAH -->
+    <section id="cara-pesan" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-100/80 px-4 py-1.5 rounded-full">Proses Cepat & Praktis</span>
+                <h2 class="text-3xl font-extrabold text-slate-900 mt-3">4 Langkah Mudah Melaksanakan Aqiqah</h2>
+                <p class="text-slate-600 text-sm mt-2">Ibadah tenang tanpa repot, tim kami bantu mulai dari konsultasi hingga hidangan tersaji.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+                <!-- Step 1 -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 text-center relative group hover:border-emerald-500 transition">
+                    <div class="w-12 h-12 bg-emerald-700 text-white font-bold rounded-2xl flex items-center justify-center mx-auto mb-4 text-lg shadow-md group-hover:scale-110 transition">
+                        1
+                    </div>
+                    <h3 class="font-bold text-slate-900 mb-1.5">Konsultasi & Pilih Paket</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Hubungi CS via WhatsApp. Tentukan paket sesuai anggaran, jenis kelamin anak, serta jumlah porsi tamu.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 text-center relative group hover:border-emerald-500 transition">
+                    <div class="w-12 h-12 bg-emerald-700 text-white font-bold rounded-2xl flex items-center justify-center mx-auto mb-4 text-lg shadow-md group-hover:scale-110 transition">
+                        2
+                    </div>
+                    <h3 class="font-bold text-slate-900 mb-1.5">Pilih Kambing & Jadwal</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Pilih hewan di kandang atau via video, tentukan tanggal serta jam pengantaran pesanan sampai di lokasi.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 text-center relative group hover:border-emerald-500 transition">
+                    <div class="w-12 h-12 bg-emerald-700 text-white font-bold rounded-2xl flex items-center justify-center mx-auto mb-4 text-lg shadow-md group-hover:scale-110 transition">
+                        3
+                    </div>
+                    <h3 class="font-bold text-slate-900 mb-1.5">Sembelih & Olah Masak</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Penyembelihan syar'i atas nama buah hati (ada video/live). Daging langsung diolah higienis oleh chef ahli.
+                    </p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 text-center relative group hover:border-emerald-500 transition">
+                    <div class="w-12 h-12 bg-gold-600 text-white font-bold rounded-2xl flex items-center justify-center mx-auto mb-4 text-lg shadow-md group-hover:scale-110 transition">
+                        4
+                    </div>
+                    <h3 class="font-bold text-slate-900 mb-1.5">Antar & Siap Santap</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Pesanan tiba hangat di alamat Anda beserta sertifikat, pigura, risalah, dan dokumentasi lengkap.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Hubungi Sekarang Banner -->
+            <div class="mt-12 text-center">
+                <a href="https://wa.me/6281234567890?text=Assalamu%27alaikum,%20saya%20ingin%20jadwalkan%20aqiqah%20anak%20saya" target="_blank" class="inline-flex items-center gap-3 px-8 py-3.5 rounded-full bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-sm shadow-md transition transform hover:-translate-y-0.5">
+                    <i class="fa-brands fa-whatsapp text-xl text-gold-400"></i>
+                    <span>Jadwalkan Aqiqah Sekarang via WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. TESTIMONI PELANGGAN & DOKUMENTASI -->
+    <section id="testimoni" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-100/80 px-4 py-1.5 rounded-full">Kisah Nyata Ayah & Bunda</span>
+                <h2 class="text-3xl font-extrabold text-slate-900 mt-3">Kata Mereka Tentang Dapur Aqiqah</h2>
+                <p class="text-slate-600 text-sm mt-2">Alhamdulillah ribuan keluarga di Bandung dan Cimahi merasa puas dengan pelayanan dan cita rasa masakan kami.</p>
+            </div>
+
+            <!-- Grid Review -->
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Testi 1 -->
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-gold-500 text-sm mb-3">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 text-xs sm:text-sm italic leading-relaxed">
+                            "Masya Allah gulai dan satenya enak banget! Dagingnya empuk pol, sama sekali gak ada bau prengus kambingnya. Tamu-tamu undangan banyak yang muji dan nanya pesen di mana. Pengiriman ke Antapani juga on time 1 jam sebelum acara. Makasih Dapur Aqiqah!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 mt-6 pt-4 border-t border-slate-100">
+                        <div class="w-10 h-10 rounded-full bg-emerald-600 text-white font-bold flex items-center justify-center text-sm">
+                            BA
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Bunda Annisa & Suami</h4>
+                            <p class="text-xs text-slate-500">Antapani, Kota Bandung (Aqiqah Putri Pertama)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testi 2 -->
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-gold-500 text-sm mb-3">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 text-xs sm:text-sm italic leading-relaxed">
+                            "Pesan paket Nasi Kebuli Sultan buat aqiqah anak laki-laki saya. Beras basmatinya panjang pulen, bumbu rempahnya mantap. Sertifikatnya mewah berbingkai kaca langsung saya pajang di ruang tamu. Pelayanan CS-nya ramah dan sangat komunikatif."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 mt-6 pt-4 border-t border-slate-100">
+                        <div class="w-10 h-10 rounded-full bg-amber-600 text-white font-bold flex items-center justify-center text-sm">
+                            HR
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Ayah Hendra Rachman</h4>
+                            <p class="text-xs text-slate-500">Cimahi Tengah (Aqiqah Putra Kedua)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testi 3 -->
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-gold-500 text-sm mb-3">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 text-xs sm:text-sm italic leading-relaxed">
+                            "Awalnya ragu karena mau aqiqah pertama kali, tapi alhamdulillah ditawari Free Tester dulu ke rumah di Padalarang. Setelah dicoba sekeluarga cocok banget, langsung deal 2 kambing jantan. Dokumentasi video sembelihnya jelas dan syar'i."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 mt-6 pt-4 border-t border-slate-100">
+                        <div class="w-10 h-10 rounded-full bg-teal-600 text-white font-bold flex items-center justify-center text-sm">
+                            FR
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">dr. Fikri & drg. Rina</h4>
+                            <p class="text-xs text-slate-500">Padalarang, Bandung Barat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Galeri Foto Kemasan & Dokumentasi -->
+            <div class="mt-14 bg-white p-6 rounded-3xl border border-slate-200 shadow-sm">
+                <div class="flex flex-col sm:flex-row justify-between items-center mb-6 gap-2">
+                    <h3 class="font-bold text-slate-800 text-lg">Dokumentasi Kemasan Dus & Olahan Higienis</h3>
+                    <span class="text-xs text-emerald-700 font-semibold"><i class="fa-solid fa-camera mr-1"></i> Foto Asli Dokumentasi Dapur Aqiqah</span>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="group relative overflow-hidden rounded-2xl bg-emerald-950 aspect-video flex items-center justify-center text-white">
+                        <div class="text-center p-3">
+                            <i class="fa-solid fa-box text-3xl text-gold-400 mb-1"></i>
+                            <p class="text-xs font-bold">Dus Bento Eksklusif</p>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-2xl bg-emerald-900 aspect-video flex items-center justify-center text-white">
+                        <div class="text-center p-3">
+                            <i class="fa-solid fa-fire text-3xl text-amber-400 mb-1"></i>
+                            <p class="text-xs font-bold">Sate Bakar Kecap Harum</p>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-2xl bg-teal-900 aspect-video flex items-center justify-center text-white">
+                        <div class="text-center p-3">
+                            <i class="fa-solid fa-bowl-rice text-3xl text-yellow-300 mb-1"></i>
+                            <p class="text-xs font-bold">Nasi Kebuli Basmati</p>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-2xl bg-emerald-950 aspect-video flex items-center justify-center text-white">
+                        <div class="text-center p-3">
+                            <i class="fa-solid fa-award text-3xl text-gold-400 mb-1"></i>
+                            <p class="text-xs font-bold">Sertifikat Berbingkai</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. AREA JANGKAUAN LAYANAN BANDUNG RAYA -->
+    <section class="py-12 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-8">
+                <span class="text-xs font-bold text-emerald-700 uppercase tracking-wider">Jangkauan Antar Cepat</span>
+                <h3 class="text-2xl font-bold text-slate-900 mt-1">Area Layanan Gratis Ongkir Dapur Aqiqah</h3>
+            </div>
+            <div class="flex flex-wrap justify-center items-center gap-2.5 max-w-4xl mx-auto text-xs font-medium text-slate-700">
+                <span class="px-3.5 py-1.5 rounded-full bg-slate-100 hover:bg-emerald-50 hover:text-emerald-700 transition"><i class="fa-solid fa-location-dot text-emerald-600 mr-1"></i> Kota Bandung</span>
+                <span class="px-3.5 py-1.5 rounded-full bg-slate-100 hover:bg-emerald-50 hover:text-emerald-700 transition"><i class="fa-solid fa-location-dot text-emerald-600 mr-1"></i> Cimahi Tengah & Selatan</span>
+                <span class="px-3.5 py-1.5 rounded-full bg-slate-100 hover:bg-emerald-50 hover:text-emerald-700 transition"><i class="fa-solid fa-location-dot text-emerald-600 mr-1"></i> Antapani & Arcamanik</span>
+                <span class="px-3.5 py-1.5 rounded-full bg-slate-100 hover:bg-emerald-50 hover:text-emerald-700 transition"><i class="fa-solid fa-location-dot text-emerald-600 mr-1"></i> Cibiru & Ujungberung</span>
+                <span class="px-3.5 py-1.5 rounded-full bg-slate-100 hover:bg-emerald-50 hover:text-emerald-700 transition"><i class="fa-solid fa-location-dot text-emerald-600 mr-1"></i> Buahbatu & Kiaracondong</span>
+                <span class="px-3.5 py-1.5 rounded-full bg-slate-100 hover:bg-emerald-50 hover:text-emerald-700 transition"><i class="fa-solid fa-location-dot text-emerald-600 mr-1"></i> Soreang & Banjaran</span>
+                <span class="px-3.5 py-1.5 rounded-full bg-slate-100 hover:bg-emerald-50 hover:text-emerald-700 transition"><i class="fa-solid fa-location-dot text-emerald-600 mr-1"></i> Padalarang & Batujajar</span>
+                <span class="px-3.5 py-1.5 rounded-full bg-slate-100 hover:bg-emerald-50 hover:text-emerald-700 transition"><i class="fa-solid fa-location-dot text-emerald-600 mr-1"></i> Lembang & Parongpong</span>
+                <span class="px-3.5 py-1.5 rounded-full bg-slate-100 hover:bg-emerald-50 hover:text-emerald-700 transition"><i class="fa-solid fa-location-dot text-emerald-600 mr-1"></i> Rancaekek & Jatinangor</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. FAQ ACCORDION -->
+    <section id="faq" class="py-20 bg-slate-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12">
+                <span class="text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-100/80 px-4 py-1.5 rounded-full">Tanya Jawab Seputar Aqiqah</span>
+                <h2 class="text-3xl font-extrabold text-slate-900 mt-3">Pertanyaan yang Sering Diajukan</h2>
+                <p class="text-slate-600 text-sm mt-2">Punya pertanyaan seputar hukum aqiqah dan layanan kami? Temukan jawabannya di bawah ini.</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(1)" class="w-full text-left p-5 font-bold text-slate-800 flex justify-between items-center hover:text-emerald-700 transition">
+                        <span>Apakah boleh mengaqiqahi anak setelah lewat hari ke-7 atau saat sudah dewasa?</span>
+                        <i id="faq-icon-1" class="fa-solid fa-chevron-down text-sm text-slate-400 transition-transform duration-200"></i>
+                    </button>
+                    <div id="faq-ans-1" class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-600 border-t border-slate-100 pt-3 leading-relaxed">
+                        Menurut jumhur ulama, waktu utama (afdhol) pelaksanaan aqiqah adalah pada hari ke-7 setelah kelahiran. Namun jika ada udzur atau kendala finansial, dapat dilaksanakan pada hari ke-14, ke-21, atau kapan saja saat orang tua sudah mampu sebelum anak baligh. Bahkan bagi yang belum diaqiqahi orang tuanya, dibolehkan mengaqiqahi diri sendiri setelah dewasa.
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(2)" class="w-full text-left p-5 font-bold text-slate-800 flex justify-between items-center hover:text-emerald-700 transition">
+                        <span>Apakah boleh aqiqah menggunakan kambing atau domba betina?</span>
+                        <i id="faq-icon-2" class="fa-solid fa-chevron-down text-sm text-slate-400 transition-transform duration-200"></i>
+                    </button>
+                    <div id="faq-ans-2" class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-600 border-t border-slate-100 pt-3 leading-relaxed">
+                        Sangat boleh dan sah secara syariat. Berdasarkan hadits riwayat Abu Dawud, Rasulullah SAW bersabda mengenai aqiqah: <em>"Dua ekor kambing yang sepadan untuk anak laki-laki dan satu ekor kambing untuk anak perempuan, tidak memudharatkan kalian apakah kambing tersebut jantan atau betina."</em> Di Dapur Aqiqah tersedia opsi kambing jantan maupun betina sesuai kenyamanan budget Anda.
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(3)" class="w-full text-left p-5 font-bold text-slate-800 flex justify-between items-center hover:text-emerald-700 transition">
+                        <span>Apakah saya boleh hadir dan menyembelih sendiri atau menyaksikan langsung?</span>
+                        <i id="faq-icon-3" class="fa-solid fa-chevron-down text-sm text-slate-400 transition-transform duration-200"></i>
+                    </button>
+                    <div id="faq-ans-3" class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-600 border-t border-slate-100 pt-3 leading-relaxed">
+                        Tentu saja boleh! Ayah atau perwakilan keluarga dipersilakan hadir langsung di Rumah Potong Hewan kami di Bandung untuk menyaksikan pemotongan, bahkan dipandu bila ayah ingin menyembelih langsung. Bila berhalangan hadir, tim kami akan mendokumentasikan prosesi penyembelihan secara lengkap (foto & video) dan mengirimkannya melalui WhatsApp.
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(4)" class="w-full text-left p-5 font-bold text-slate-800 flex justify-between items-center hover:text-emerald-700 transition">
+                        <span>Bagaimana sistem pembayaran dan apakah bisa COD?</span>
+                        <i id="faq-icon-4" class="fa-solid fa-chevron-down text-sm text-slate-400 transition-transform duration-200"></i>
+                    </button>
+                    <div id="faq-ans-4" class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-600 border-t border-slate-100 pt-3 leading-relaxed">
+                        Pembayaran di Dapur Aqiqah sangat fleksibel. Anda cukup membayar uang tanda jadi (DP) ringan saat pemesanan, dan sisa pelunasan bisa dilakukan dengan metode COD (Cash on Delivery / Transfer) setelah paket pesanan aqiqah tiba di rumah Anda dalam kondisi aman dan rapi.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12. BOTTOM BANNER CTA -->
+    <section class="bg-gradient-to-r from-emerald-800 via-emerald-700 to-emerald-900 text-white py-14">
+        <div class="max-w-6xl mx-auto px-4 text-center space-y-6">
+            <h2 class="text-3xl sm:text-4xl font-extrabold">Sempurnakan Syukur Kelahiran Sang Buah Hati Bersama Dapur Aqiqah</h2>
+            <p class="text-slate-200 text-sm sm:text-base max-w-2xl mx-auto">
+                Dapatkan penawaran terbaik, promo gratis ongkir, free tester food, dan konsultasi ramah bersama tim aqiqah berpengalaman kami.
+            </p>
+            <div class="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="https://wa.me/6281234567890?text=Assalamu%27alaikum%20Dapur%20Aqiqah,%20saya%20mau%20konsultasi%20paket%20aqiqah" target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gold-500 hover:bg-gold-600 text-emerald-950 font-black text-base shadow-xl flex items-center justify-center gap-2 transform hover:scale-105 transition">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                    <span>Konsultasi Cepat via WhatsApp Sekarang</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 13. FOOTER LENGKAP -->
+    <footer class="bg-emerald-950 text-slate-300 pt-16 pb-12 border-t border-emerald-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-emerald-900">
+                <!-- Col 1: Profil -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-emerald-600 rounded-xl flex items-center justify-center text-white text-xl">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+                        <span class="text-xl font-black text-white tracking-tight">DAPUR <span class="text-gold-400">AQIQAH</span></span>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Penyedia layanan aqiqah profesional, syar'i, higienis dan terpercaya di wilayah Bandung, Cimahi, dan sekitarnya. Membantu keluarga muslim menyempurnakan sunnah dengan kemudahan maksimal.
+                    </p>
+                    <div class="flex gap-3 text-slate-400">
+                        <a href="#" class="w-8 h-8 rounded-full bg-emerald-900 flex items-center justify-center hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-emerald-900 flex items-center justify-center hover:text-white transition"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-emerald-900 flex items-center justify-center hover:text-white transition"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-emerald-900 flex items-center justify-center hover:text-white transition"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Alamat Kantor & Dapur Bandung -->
+                <div class="space-y-3">
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider">Lokasi Kantor & Dapur</h4>
+                    <ul class="text-xs space-y-2.5 text-slate-400">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-map-pin text-gold-400 mt-0.5"></i>
+                            <span><strong>Pusat Bandung:</strong> Jl. Cisaranten Kulon No. 45, Arcamanik, Kota Bandung</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-map-pin text-gold-400 mt-0.5"></i>
+                            <span><strong>Gerai Cimahi:</strong> Jl. Cihanjuang No. 12B, Cimahi Utara</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-warehouse text-emerald-400 mt-0.5"></i>
+                            <span><strong>Kandang & RPH:</strong> Cilengkrang, Bandung Timur (Bisa Dikunjungi)</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Navigasi Cepat -->
+                <div class="space-y-3">
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider">Menu Navigasi</h4>
+                    <ul class="text-xs space-y-2 text-slate-400">
+                        <li><a href="#paket" class="hover:text-gold-400 transition">Paket Nikmat (Sate & Gulai)</a></li>
+                        <li><a href="#paket" class="hover:text-gold-400 transition">Paket Nasi Kebuli Sultan</a></li>
+                        <li><a href="#paket" class="hover:text-gold-400 transition">Kambing Guling Bandung</a></li>
+                        <li><a href="#kalkulator" class="hover:text-gold-400 transition">Simulasi Perhitungan Biaya</a></li>
+                        <li><a href="#keunggulan" class="hover:text-gold-400 transition">Kenapa Memilih Dapur Aqiqah</a></li>
+                        <li><a href="#faq" class="hover:text-gold-400 transition">Fikih & Tanya Jawab Aqiqah</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Layanan Kontak -->
+                <div class="space-y-3">
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider">Kontak & Jam Buka</h4>
+                    <ul class="text-xs space-y-2.5 text-slate-400">
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-phone text-emerald-400"></i>
+                            <span>0812-3456-7890 (WhatsApp & Telepon)</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-envelope text-emerald-400"></i>
+                            <span>info@dapuraqiqah.com</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-clock text-gold-400"></i>
+                            <span>Senin - Ahad: 07.30 - 20.00 WIB</span>
+                        </li>
+                    </ul>
+                    <div class="pt-2">
+                        <span class="inline-block bg-emerald-900 text-emerald-300 text-[11px] font-semibold px-3 py-1 rounded-full border border-emerald-700/50">
+                            Layanan 24 Jam via WhatsApp
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+                <p>&copy; 2026 Dapur Aqiqah Bandung - Cimahi. Seluruh Hak Cipta Dilindungi.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="hover:text-slate-400">Kebijakan Privasi</a>
+                    <span>&bull;</span>
+                    <a href="#" class="hover:text-slate-400">Syarat & Ketentuan</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 14. FLOATING STICKY WHATSAPP BUTTON DENGAN QUICK CHAT -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end">
+        <!-- Chat Bubble Popup (Default Hidden) -->
+        <div id="waPopup" class="hidden mb-3 bg-white text-slate-800 p-4 rounded-2xl shadow-2xl border border-slate-200 max-w-xs text-xs animate-bounce">
+            <div class="flex items-center justify-between pb-2 mb-2 border-b border-slate-100">
+                <span class="font-bold text-emerald-800 flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-green-500 animate-ping"></span> CS Dapur Aqiqah Online
+                </span>
+                <button onclick="toggleWaPopup()" class="text-slate-400 hover:text-slate-600 font-bold">&times;</button>
+            </div>
+            <p class="text-slate-600 mb-3">Halo Ayah & Bunda! Ada yang bisa kami bantu mengenai paket aqiqah atau klaim <strong>Free Tester</strong>?</p>
+            <a href="https://wa.me/6281234567890?text=Halo%20Dapur%20Aqiqah,%20saya%20ingin%20tanya%20paket%20aqiqah" target="_blank" class="block text-center py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl transition">
+                Mulai Chat Sekarang
+            </a>
+        </div>
+
+        <!-- Tombol Utama WA -->
+        <button onclick="toggleWaPopup()" class="group flex items-center gap-2.5 bg-gradient-to-r from-emerald-600 to-green-600 hover:from-emerald-700 hover:to-green-700 text-white font-bold py-3 px-5 rounded-full shadow-2xl transition transform hover:scale-105 active:scale-95" aria-label="WhatsApp Kami">
+            <i class="fa-brands fa-whatsapp text-2xl text-white"></i>
+            <span class="hidden sm:inline text-sm font-semibold tracking-wide">Konsultasi Aqiqah</span>
+        </button>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC INTERAKTIF -->
+    <script>
+        // Toggle Mobile Menu
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Filter Kategori Paket
+        function filterCategory(category) {
+            const tabs = ['nikmat', 'kebuli', 'mantap', 'guling'];
+            tabs.forEach(tab => {
+                const btn = document.getElementById('tab-' + tab);
+                if (btn) {
+                    if (tab === category) {
+                        btn.className = 'cat-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold bg-emerald-700 text-white shadow-md transition';
+                    } else {
+                        btn.className = 'cat-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 transition';
+                    }
+                }
+            });
+
+            const cards = document.querySelectorAll('.package-card');
+            cards.forEach(card => {
+                if (card.classList.contains(category)) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        }
+
+        // Kalkulator Aqiqah
+        function updateBoxDisplay() {
+            const boxes = document.getElementById('boxSlider').value;
+            document.getElementById('boxCountDisplay').innerText = boxes + " Box";
+        }
+
+        function calculateAqiqah() {
+            const gender = document.querySelector('input[name="gender"]:checked').value;
+            const animalType = document.getElementById('animalType').value;
+            const menuType = document.getElementById('menuType').value;
+            const boxes = parseInt(document.getElementById('boxSlider').value);
+
+            // Update UI Styling Tombol Gender
+            const genderLabels = document.querySelectorAll('.gender-btn');
+            if (gender === 'perempuan') {
+                genderLabels[0].className = 'gender-btn flex items-center justify-center gap-2 p-3 rounded-xl border border-white/20 cursor-pointer transition text-xs sm:text-sm font-bold bg-emerald-700 text-white';
+                genderLabels[1].className = 'gender-btn flex items-center justify-center gap-2 p-3 rounded-xl border border-white/20 cursor-pointer transition text-xs sm:text-sm font-bold text-slate-300';
+            } else {
+                genderLabels[0].className = 'gender-btn flex items-center justify-center gap-2 p-3 rounded-xl border border-white/20 cursor-pointer transition text-xs sm:text-sm font-bold text-slate-300';
+                genderLabels[1].className = 'gender-btn flex items-center justify-center gap-2 p-3 rounded-xl border border-white/20 cursor-pointer transition text-xs sm:text-sm font-bold bg-emerald-700 text-white';
+            }
+
+            // Hitung Biaya Hewan
+            let animalMultiplier = (gender === 'laki') ? 2 : 1;
+            let baseAnimalPrice = (animalType === 'betina') ? 1450000 : 1950000;
+            let totalAnimalCost = baseAnimalPrice * animalMultiplier;
+
+            // Biaya Box Per Satuan
+            let pricePerBox = 20000;
+            if (menuType === 'kebuli') {
+                pricePerBox = 28000; // Nasi basmati lebih premium
+            } else if (menuType === 'rendang_sop') {
+                pricePerBox = 22000;
+            }
+
+            let totalBoxCost = boxes * pricePerBox;
+            let grandTotal = totalAnimalCost + totalBoxCost;
+
+            // Tampilkan ke UI
+            const formatter = new Intl.NumberFormat('id-ID', {
+                style: 'currency',
+                currency: 'IDR',
+                maximumFractionDigits: 0
+            });
+
+            document.getElementById('totalPriceDisplay').innerText = formatter.format(grandTotal);
+            document.getElementById('detailHewan').innerText = formatter.format(totalAnimalCost);
+            document.getElementById('detailBox').innerText = formatter.format(totalBoxCost) + ` (${boxes} x ${formatter.format(pricePerBox)})`;
+
+            const genderText = (gender === 'laki') ? '2 Ekor Kambing' : '1 Ekor Kambing';
+            const jenisText = (animalType === 'jantan') ? 'Jantan' : 'Betina';
+            const menuName = (menuType === 'kebuli') ? 'Nasi Kebuli' : (menuType === 'rendang_sop' ? 'Rendang & Sop' : 'Sate & Gulai');
+
+            document.getElementById('calcSummaryDetail').innerText = `${genderText} ${jenisText} + ${boxes} Box Bento (${menuName})`;
+        }
+
+        // WhatsApp redirect dari hasil kalkulator
+        function orderViaCalc() {
+            const total = document.getElementById('totalPriceDisplay').innerText;
+            const summary = document.getElementById('calcSummaryDetail').innerText;
+            const text = `Bismillah,%20saya%20telah%20menghitung%20simulasi%20aqiqah:%0A%0A*Detail:*%20${encodeURIComponent(summary)}%0A*Estimasi%20Biaya:*%20${encodeURIComponent(total)}%0A%0AMohon%20info%20ketersediaan%20jadwal%20dan%20tata%20cara%20pemesanan%20selanjutnya.%20Terima%20kasih!`;
+            window.open(`https://wa.me/6281234567890?text=${text}`, '_blank');
+        }
+
+        // FAQ Toggle
+        function toggleFaq(id) {
+            const ans = document.getElementById(`faq-ans-${id}`);
+            const icon = document.getElementById(`faq-icon-${id}`);
+            if (ans.classList.contains('hidden')) {
+                ans.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            } else {
+                ans.classList.add('hidden');
+                icon.classList.remove('rotate-180');
+            }
+        }
+
+        // Floating WhatsApp Popup
+        function toggleWaPopup() {
+            const popup = document.getElementById('waPopup');
+            popup.classList.toggle('hidden');
+        }
+
+        // Auto calculate pertama kali load
+        window.addEventListener('DOMContentLoaded', () => {
+            calculateAqiqah();
+        });
+    </script>
+</body>
+</html>
