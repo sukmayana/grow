@@ -1,187 +1,431 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Grow.my.id | Bisnis yang Sedang Bertumbuh</title>
+  <title>Distributor Resmi Mesin Enagic Kangen Water Indonesia</title>
+  <meta name="description" content="Dapatkan mesin ionisasi air Enagic Kangen Water original bergaransi resmi. K8, SD501, dan JRIV. Konsultasi dan demo unit gratis.">
+  
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Phosphor Icons untuk ikon modern -->
-  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col justify-between">
+<body class="bg-slate-50 text-slate-800 antialiased">
 
-  <!-- Header / Hero Section -->
-  <header class="pt-12 pb-10 px-4 text-center bg-white border-b border-slate-200">
-    <div class="max-w-xl mx-auto flex flex-col items-center">
-      
-      <!-- Icon Logo Portal -->
-      <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-emerald-600 text-white shadow-lg shadow-emerald-200 mb-4">
-        <i class="ph-bold ph-trend-up text-3xl"></i>
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center text-white font-black text-xl shadow-md">
+          E
+        </div>
+        <div>
+          <span class="text-xl font-bold tracking-tight text-slate-900 block leading-tight">ENAGIC<span class="text-blue-600">.ID</span></span>
+          <span class="text-[10px] text-slate-500 uppercase tracking-widest font-semibold">Authorized Independent Distributor</span>
+        </div>
       </div>
 
-      <!-- Nama Portal -->
-      <h1 class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
-        GROW.MY.ID
-      </h1>
+      <nav class="hidden md:flex items-center space-x-8 font-medium text-sm text-slate-600">
+        <a href="#keunggulan" class="hover:text-blue-600 transition">Keunggulan</a>
+        <a href="#jenis-air" class="hover:text-blue-600 transition">5 Tipe Air</a>
+        <a href="#produk" class="hover:text-blue-600 transition">Katalog Mesin</a>
+        <a href="#faq" class="hover:text-blue-600 transition">FAQ</a>
+      </nav>
 
-      <!-- Slogan Badge -->
-      <div class="mt-2.5 inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200 tracking-wide uppercase">
-        <i class="ph-fill ph-sparkle text-emerald-500"></i>
-        <span>Bisnis yang Sedang Bertumbuh</span>
+      <div>
+        <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20ingin%20konsultasi%20pembelian%20mesin%20Enagic" target="_blank"
+           class="inline-flex items-center px-5 py-2.5 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-sm transition shadow-sm hover:shadow-md">
+          <svg class="w-4 h-4 mr-2 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.592 2.654-.696c1.001.554 1.83.844 2.806.844h.005c3.182 0 5.768-2.586 5.768-5.766 0-3.18-2.586-5.767-5.773-5.767zm7.969 5.766c0 4.406-3.584 7.99-7.969 7.99-1.379 0-2.67-.354-3.79-1.026l-4.241 1.11 1.13-4.133c-.767-1.189-1.173-2.571-1.173-3.941 0-4.406 3.584-7.99 7.969-7.99 4.385 0 8.074 3.584 8.074 7.99z"/></svg>
+          Konsultasi Gratis
+        </a>
       </div>
-
-      <!-- Deskripsi Singkat -->
-      <p class="mt-3.5 text-sm sm:text-base text-slate-600 leading-relaxed">
-        Pusat direktori resmi layanan transaksi pulsa & digital, katering aqiqah terpercaya, serta penyedia hewan qurban berkualitas.
-      </p>
     </div>
   </header>
 
-  <!-- Main Grid Section -->
-  <main class="flex-grow max-w-6xl w-full mx-auto px-4 py-10">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-
-      <!-- Card 1: AEMITRA Pulsa -->
-      <div class="bg-white rounded-2xl border border-slate-200 p-6 flex flex-col justify-between hover:shadow-xl hover:-translate-y-1 transition duration-200">
-        <div class="flex flex-col items-center text-center">
-          <div class="flex justify-center mb-4">
-            <img 
-              src="/images/aemitra.png" 
-              alt="Logo AEMITRA Multi Payment Indonesia" 
-              class="w-20 h-20 rounded-2xl object-cover shadow-md shadow-red-100"
-            />
+  <!-- HERO SECTION -->
+  <section class="relative pt-12 pb-20 lg:pt-20 lg:pb-32 overflow-hidden bg-gradient-to-b from-blue-50/60 to-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-100 text-blue-700 text-xs font-semibold uppercase tracking-wider">
+            <span class="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
+            Teknologi Elektrolisis Medis Original Jepang
           </div>
-          <span class="inline-block px-2.5 py-0.5 rounded-full text-xs font-semibold bg-red-100 text-red-800 mb-2">
-            Server Pulsa & PPOB
-          </span>
-          <h2 class="text-xl font-bold text-slate-900 mb-2">AEMITRA Pulsa</h2>
-          <p class="text-sm text-slate-600">
-            Layanan distributor pulsa, paket data, voucher game, dan loket pembayaran tagihan PPOB terlengkap.
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight">
+            Ubah Kualitas Air Minum Keluarga Langsung dari Keran Anda
+          </h1>
+          <p class="text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+            Hadirkan mesin ionisasi air berstandar medis dari <strong>Enagic Jepang</strong>. Menghasilkan air kaya antioksidan hidrogen aktif, hidrasi optimal, dan serbaguna untuk kebutuhan sanitasi serta kecantikan harian.
           </p>
-        </div>
-        <div class="mt-6">
-          <a 
-            href="https://aemitra.grow.my.id" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            class="w-full inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-medium py-2.5 px-4 rounded-xl transition text-sm shadow-sm"
-          >
-            <span>Kunjungi Website</span>
-            <i class="ph-bold ph-arrow-up-right"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- Card 2: PRASTICA RELOAD -->
-      <div class="bg-white rounded-2xl border border-slate-200 p-6 flex flex-col justify-between hover:shadow-xl hover:-translate-y-1 transition duration-200">
-        <div class="flex flex-col items-center text-center">
-          <!-- Logo Gambar Prastica Reload di Tengah -->
-          <div class="flex justify-center mb-4">
-            <img 
-              src="/images/prastica-reload.webp" 
-              alt="Logo Prastica Reload" 
-              class="w-20 h-20 object-contain"
-            />
+          <div class="pt-2 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20tertarik%20dengan%20demo%20unit%20mesin%20Enagic" target="_blank"
+               class="px-8 py-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-center shadow-lg shadow-blue-500/25 transition">
+              Jadwalkan Demo Unit & Cek Kualitas Air
+            </a>
+            <a href="#produk" class="px-8 py-4 rounded-xl bg-white hover:bg-slate-100 text-slate-700 font-semibold border border-slate-300 text-center transition">
+              Lihat Varian Mesin
+            </a>
           </div>
-          <span class="inline-block px-2.5 py-0.5 rounded-full text-xs font-semibold bg-orange-100 text-orange-800 mb-2">
-            Paket Data Hemat
-          </span>
-          <h2 class="text-xl font-bold text-slate-900 mb-2 leading-snug">PRASTICA RELOAD</h2>
-          <p class="text-xs font-semibold text-orange-600 uppercase tracking-wide -mt-1 mb-2">Kuota Murah</p>
-          <p class="text-sm text-slate-600">
-            Pusat isi ulang kuota data internet all operator dengan harga super hemat, cepat, dan transaksi otomatis 24 jam.
-          </p>
-        </div>
-        <div class="mt-6">
-          <a 
-            href="https://prasticareload.grow.my.id" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            class="w-full inline-flex items-center justify-center gap-2 bg-orange-600 hover:bg-orange-700 text-white font-medium py-2.5 px-4 rounded-xl transition text-sm shadow-sm"
-          >
-            <span>Beli Kuota Murah</span>
-            <i class="ph-bold ph-arrow-up-right"></i>
-          </a>
-        </div>
-      </div>
 
-      <!-- Card 3: Dapur Aqiqah -->
-      <div class="bg-white rounded-2xl border border-slate-200 p-6 flex flex-col justify-between hover:shadow-xl hover:-translate-y-1 transition duration-200">
-        <div class="flex flex-col items-center text-center">
-          <div class="flex justify-center mb-4">
-            <img 
-              src="/images/logo-dapur-aqiqah.webp" 
-              alt="Logo Dapur Aqiqah" 
-              class="w-20 h-20 object-contain"
-            />
+          <!-- Trust Badges -->
+          <div class="pt-8 border-t border-slate-200 grid grid-cols-3 gap-4 text-center">
+            <div>
+              <p class="text-2xl font-bold text-slate-900">45+ Tahun</p>
+              <p class="text-xs text-slate-500 font-medium mt-0.5">Pengalaman Global</p>
+            </div>
+            <div>
+              <p class="text-2xl font-bold text-slate-900">ISO 13485</p>
+              <p class="text-xs text-slate-500 font-medium mt-0.5">Standar Alat Medis</p>
+            </div>
+            <div>
+              <p class="text-2xl font-bold text-slate-900">Garansi Resmi</p>
+              <p class="text-xs text-slate-500 font-medium mt-0.5">Sparepart & Servis</p>
+            </div>
           </div>
-          <span class="inline-block px-2.5 py-0.5 rounded-full text-xs font-semibold bg-amber-100 text-amber-800 mb-2">
-            Katering & Syiar
-          </span>
-          <h2 class="text-xl font-bold text-slate-900 mb-2">Dapur Aqiqah</h2>
-          <p class="text-sm text-slate-600">
-            Paket aqiqah praktis, higienis, dan sesuai syariat. Masakan lezat tanpa bau prengus siap diantar.
-          </p>
         </div>
-        <div class="mt-6">
-          <a 
-            href="https://dapuraqiqah.grow.my.id" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            class="w-full inline-flex items-center justify-center gap-2 bg-amber-600 hover:bg-amber-700 text-white font-medium py-2.5 px-4 rounded-xl transition text-sm shadow-sm"
-          >
-            <span>Lihat Paket Menu</span>
-            <i class="ph-bold ph-arrow-up-right"></i>
-          </a>
-        </div>
-      </div>
 
-      <!-- Card 4: Domba Qurban -->
-      <div class="bg-white rounded-2xl border border-slate-200 p-6 flex flex-col justify-between hover:shadow-xl hover:-translate-y-1 transition duration-200">
-        <div class="flex flex-col items-center text-center">
-          <div class="w-20 h-20 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-3xl mb-4 shadow-md shadow-emerald-100">
-            <i class="ph ph-shield-check"></i>
+        <div class="lg:col-span-5 relative flex justify-center">
+          <div class="relative w-full max-w-md bg-gradient-to-tr from-blue-600 to-indigo-500 rounded-3xl p-1 shadow-2xl">
+            <div class="bg-white rounded-[22px] p-6 text-center space-y-6">
+              <div class="w-full h-64 bg-slate-100 rounded-xl flex items-center justify-center border border-dashed border-slate-300 relative overflow-hidden">
+                <span class="text-slate-400 font-medium text-sm">[ Foto Unit Mesin Leveluk K8 ]</span>
+              </div>
+              <div>
+                <span class="px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-xs font-bold uppercase tracking-wide">Flagship Model</span>
+                <h3 class="text-2xl font-bold text-slate-900 mt-2">Leveluk K8 (Kangen 8)</h3>
+                <p class="text-slate-500 text-sm mt-1">8 Pelat Elektroda Platinum-Coated Titanium dengan Layar Sentuh Full Color Multi-Bahasa.</p>
+              </div>
+              <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20minta%20info%20promo%20Leveluk%20K8" class="block w-full py-3 rounded-lg bg-blue-50 text-blue-700 font-bold hover:bg-blue-100 transition text-sm">
+                Minta Simulasi Harga & Cicilan &rarr;
+              </a>
+            </div>
           </div>
-          <span class="inline-block px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800 mb-2">
-            Peternakan
-          </span>
-          <h2 class="text-xl font-bold text-slate-900 mb-2">Domba Qurban</h2>
-          <p class="text-sm text-slate-600">
-            Penyedia hewan qurban sehat, bobot terjamin, tersertifikasi dokter hewan, dan gratis perawatan hingga hari H.
-          </p>
         </div>
-        <div class="mt-6">
-          <a 
-            href="#" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            class="w-full inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-2.5 px-4 rounded-xl transition text-sm shadow-sm"
-          >
-            <span>Pilih Hewan Qurban</span>
-            <i class="ph-bold ph-arrow-right"></i>
-          </a>
-        </div>
-      </div>
 
+      </div>
     </div>
+  </section>
 
-    <!-- WhatsApp Support Section -->
-    <div class="mt-8 bg-slate-900 text-slate-100 rounded-2xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <div>
-        <h3 class="font-semibold text-white">Butuh informasi atau kemitraan?</h3>
-        <p class="text-sm text-slate-400">Hubungi pengelola portal untuk pertanyaan seputar unit usaha di Grow.my.id.</p>
+  <!-- 5 TIPE AIR SECTION -->
+  <section id="jenis-air" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs font-bold tracking-widest text-blue-600 uppercase mb-2">Multifungsi 1 Mesin</h2>
+        <p class="text-3xl sm:text-4xl font-extrabold text-slate-900">1 Mesin Menghasilkan 5 Tipe Air Berbeda</p>
+        <p class="mt-4 text-slate-600">Teknologi ionisasi memisahkan molekul air menjadi beberapa tingkat pH untuk aneka kebutuhan keluarga.</p>
       </div>
-      <a href="https://wa.me/62xxxxxxxxxxx" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-white text-slate-900 hover:bg-slate-100 font-medium px-4 py-2 rounded-xl text-sm transition shrink-0">
-        <i class="ph-bold ph-whatsapp-logo text-emerald-600 text-lg"></i>
-        <span>WhatsApp Admin</span>
-      </a>
-    </div>
-  </main>
 
-  <!-- Footer -->
-  <footer class="py-6 text-center text-xs text-slate-400 border-t border-slate-200 bg-white">
-    <p>&copy; 2026 Grow.my.id — Bisnis yang Sedang Bertumbuh. Seluruh hak cipta dilindungi.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+        <!-- 1: Kangen Water -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-blue-300 hover:shadow-lg transition">
+          <div class="w-12 h-12 rounded-xl bg-blue-600 text-white flex items-center justify-center font-extrabold text-lg mb-4">
+            9.5
+          </div>
+          <h3 class="text-lg font-bold text-slate-900">Kangen Water</h3>
+          <p class="text-xs text-blue-600 font-semibold mb-2">pH 8.5 – 9.5</p>
+          <p class="text-sm text-slate-600 leading-relaxed">Air minum harian kaya antioksidan hidrogen terlarut dan mikromolekul untuk hidrasi optimal dan kesegaran tubuh.</p>
+        </div>
+
+        <!-- 2: Clean Water -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-emerald-300 hover:shadow-lg transition">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500 text-white flex items-center justify-center font-extrabold text-lg mb-4">
+            7.0
+          </div>
+          <h3 class="text-lg font-bold text-slate-900">Clean Water</h3>
+          <p class="text-xs text-emerald-600 font-semibold mb-2">pH Netral 7.0</p>
+          <p class="text-sm text-slate-600 leading-relaxed">Air murni terfiltrasi bebas klorin, ideal untuk konsumsi obat medis harian dan pembuatan susu formula bayi.</p>
+        </div>
+
+        <!-- 3: Beauty Water -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-pink-300 hover:shadow-lg transition">
+          <div class="w-12 h-12 rounded-xl bg-pink-500 text-white flex items-center justify-center font-extrabold text-lg mb-4">
+            6.0
+          </div>
+          <h3 class="text-lg font-bold text-slate-900">Beauty Water</h3>
+          <p class="text-xs text-pink-600 font-semibold mb-2">pH 5.5 – 6.0</p>
+          <p class="text-sm text-slate-600 leading-relaxed">Sifat asam lemah dengan efek astringent alami. Sangat cocok sebagai toner wajah, perawatan rambut, dan cuci muka.</p>
+        </div>
+
+        <!-- 4: Strong Acidic -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-red-300 hover:shadow-lg transition">
+          <div class="w-12 h-12 rounded-xl bg-red-600 text-white flex items-center justify-center font-extrabold text-lg mb-4">
+            2.5
+          </div>
+          <h3 class="text-lg font-bold text-slate-900">Strong Acidic</h3>
+          <p class="text-xs text-red-600 font-semibold mb-2">pH 2.5</p>
+          <p class="text-sm text-slate-600 leading-relaxed">Sanitasi tingkat tinggi untuk desinfeksi peralatan dapur, mencuci tangan antibakteri, dan membersihkan luka ringan.</p>
+        </div>
+
+        <!-- 5: Strong Kangen -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-indigo-300 hover:shadow-lg transition">
+          <div class="w-12 h-12 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-extrabold text-lg mb-4">
+            11.5
+          </div>
+          <h3 class="text-lg font-bold text-slate-900">Strong Kangen</h3>
+          <p class="text-xs text-indigo-600 font-semibold mb-2">pH 11.5</p>
+          <p class="text-sm text-slate-600 leading-relaxed">Daya emulsifikasi minyak yang kuat, efektif membilas residu pestisida pada sayur & buah serta membersihkan noda lemak.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUK KATALOG -->
+  <section id="produk" class="py-20 bg-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs font-bold tracking-widest text-blue-600 uppercase mb-2">Varian Perangkat</h2>
+        <p class="text-3xl sm:text-4xl font-extrabold text-slate-900">Pilihan Tipe Mesin Leveluk Enagic</p>
+        <p class="mt-4 text-slate-600">Pilih unit mesin sesuai kapasitas harian keluarga atau kebutuhan tempat usaha Anda.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- CARD 1: JRIV -->
+        <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition flex flex-col justify-between">
+          <div>
+            <div class="h-44 bg-slate-50 rounded-xl mb-6 flex items-center justify-center border border-dashed border-slate-200">
+              <span class="text-slate-400 text-xs font-semibold">[ Foto Leveluk JRIV ]</span>
+            </div>
+            <h3 class="text-2xl font-bold text-slate-900">Leveluk JRIV</h3>
+            <p class="text-sm text-slate-500 mt-1">Pilihan hemat untuk keluarga kecil (1-3 orang)</p>
+            
+            <ul class="mt-6 space-y-3 text-sm text-slate-600">
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <strong>4 Pelat Elektroda</strong> Titanium berpelapis Platinum
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Konsumsi daya hemat (120W)
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Panel display LCD informatif
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Garansi Resmi 3 Tahun
+              </li>
+            </ul>
+          </div>
+          <div class="mt-8">
+            <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20info%20spesifikasi%20dan%20harga%20Leveluk%20JRIV" target="_blank"
+               class="block w-full py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-semibold text-center text-sm transition">
+              Cek Brosur & Harga
+            </a>
+          </div>
+        </div>
+
+        <!-- CARD 2: SD501 (Best Seller) -->
+        <div class="bg-white rounded-2xl p-8 border-2 border-blue-500 shadow-xl relative flex flex-col justify-between">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-blue-600 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wide">
+            Terpopuler Dunia
+          </div>
+          <div>
+            <div class="h-44 bg-slate-50 rounded-xl mb-6 flex items-center justify-center border border-dashed border-slate-200">
+              <span class="text-slate-400 text-xs font-semibold">[ Foto Leveluk SD501 ]</span>
+            </div>
+            <h3 class="text-2xl font-bold text-slate-900">Leveluk SD501</h3>
+            <p class="text-sm text-slate-500 mt-1">Standar emas keluarga Indonesia (4-7 orang)</p>
+            
+            <ul class="mt-6 space-y-3 text-sm text-slate-600">
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <strong>7 Pelat Elektroda</strong> Titanium Platinum
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Suara panduan audio interaktif
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Produksi stabil & debit air tinggi
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Garansi Resmi 5 Tahun
+              </li>
+            </ul>
+          </div>
+          <div class="mt-8">
+            <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20tertarik%20dengan%20promo%20Leveluk%20SD501" target="_blank"
+               class="block w-full py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-center text-sm shadow-md transition">
+              Konsultasi Model SD501
+            </a>
+          </div>
+        </div>
+
+        <!-- CARD 3: K8 -->
+        <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition flex flex-col justify-between">
+          <div>
+            <div class="h-44 bg-slate-50 rounded-xl mb-6 flex items-center justify-center border border-dashed border-slate-200">
+              <span class="text-slate-400 text-xs font-semibold">[ Foto Leveluk K8 ]</span>
+            </div>
+            <h3 class="text-2xl font-bold text-slate-900">Leveluk K8</h3>
+            <p class="text-sm text-slate-500 mt-1">Performa antioksidan tertinggi & layar sentuh modern</p>
+            
+            <ul class="mt-6 space-y-3 text-sm text-slate-600">
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <strong>8 Pelat Elektroda</strong> Titanium Platinum
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Layar Sentuh LCD Full Color Multi-Bahasa
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Multi-Voltage Otomatis (Global Travel Ready)
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Garansi Resmi 5 Tahun
+              </li>
+            </ul>
+          </div>
+          <div class="mt-8">
+            <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20minta%20info%20lengkap%20paket%20Leveluk%20K8" target="_blank"
+               class="block w-full py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-semibold text-center text-sm transition">
+              Cek Brosur & Harga
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- KENAPA MEMILIH KAMI / LAYANAN AFTER SALES -->
+  <section id="keunggulan" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-xs font-bold tracking-widest text-blue-600 uppercase mb-2">Layanan Purna Jual</h2>
+          <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight">
+            Kami Memastikan Mesin Anda Bekerja dengan Air Baku yang Tepat
+          </h3>
+          <p class="mt-4 text-slate-600 leading-relaxed">
+            Mesin elektrolisis membutuhkan kualitas air baku (*feed water*) yang terukur agar pelat elektroda awet dan hasil ionisasi optimal. Kami tidak hanya menjual unit, tetapi mendampingi instalasi dari hulu hingga hilir.
+          </p>
+
+          <div class="mt-8 space-y-4">
+            <div class="flex gap-4 items-start">
+              <div class="w-8 h-8 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center font-bold shrink-0">1</div>
+              <div>
+                <h4 class="font-bold text-slate-900">Uji TDS & Kualitas Air Baku</h4>
+                <p class="text-sm text-slate-500">Pengecekan TDS, kekeruhan, dan kontaminan air sebelum instalasi mesin.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 items-start">
+              <div class="w-8 h-8 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center font-bold shrink-0">2</div>
+              <div>
+                <h4 class="font-bold text-slate-900">Instalasi Pre-Filter Terpadu</h4>
+                <p class="text-sm text-slate-500">Pemasangan filter sedimen/karbon pendukung sesuai kondisi air rumah Anda.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 items-start">
+              <div class="w-8 h-8 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center font-bold shrink-0">3</div>
+              <div>
+                <h4 class="font-bold text-slate-900">Panduan Perawatan & Deep Cleaning</h4>
+                <p class="text-sm text-slate-500">Edukasi rutin e-cleaning dan deep cleaning berkala agar performa pelat tetap prima.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-blue-50 border border-blue-100 rounded-3xl p-8 lg:p-10 text-center">
+          <div class="w-16 h-16 bg-blue-600 text-white rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-md">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h4 class="text-2xl font-bold text-slate-900">Siap Pasang di Rumah Anda</h4>
+          <p class="mt-3 text-slate-600 text-sm max-w-sm mx-auto">Daftarkan alamat Anda untuk konsultasi langsung, survei air keran, dan presentasi produk di tempat.</p>
+          <div class="mt-8">
+            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20jadwalkan%20survei%20dan%20instalasi%20mesin%20Enagic" target="_blank"
+               class="inline-block w-full py-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold transition shadow-md">
+              Hubungi Spesialis Kami via WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section id="faq" class="py-20 bg-slate-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-xs font-bold tracking-widest text-blue-600 uppercase mb-2">Tanya Jawab</h2>
+        <p class="text-3xl font-extrabold text-slate-900">Pertanyaan yang Sering Diajukan</p>
+      </div>
+
+      <div class="space-y-4">
+        <details class="group bg-white p-6 rounded-2xl border border-slate-200 transition">
+          <summary class="flex justify-between items-center font-bold text-slate-900 cursor-pointer list-none">
+            <span>Apakah mesin ini bisa langsung dipasang ke air sumur atau PDAM?</span>
+            <span class="text-blue-600 group-open:rotate-180 transition">&darr;</span>
+          </summary>
+          <p class="mt-4 text-sm text-slate-600 leading-relaxed">
+            Mesin Enagic dirancang memproses air yang sudah memenuhi syarat air layak konsumsi. Jika menggunakan PDAM atau sumur dengan TDS tinggi/berlumpur, kami memasang sistem pre-filter sedimen dan karbon aktif terlebih dahulu sebelum air masuk ke mesin.
+          </p>
+        </details>
+
+        <details class="group bg-white p-6 rounded-2xl border border-slate-200 transition">
+          <summary class="flex justify-between items-center font-bold text-slate-900 cursor-pointer list-none">
+            <span>Apakah pembelian mesin mendapatkan garansi resmi?</span>
+            <span class="text-blue-600 group-open:rotate-180 transition">&darr;</span>
+          </summary>
+          <p class="mt-4 text-sm text-slate-600 leading-relaxed">
+            Ya, semua unit mesin kami adalah 100% original dari Enagic dengan garansi resmi pabrikan (3 hingga 5 tahun tergantung tipe unit). Garansi mencakup servis dan suku cadang asli di service center resmi.
+          </p>
+        </details>
+
+        <details class="group bg-white p-6 rounded-2xl border border-slate-200 transition">
+          <summary class="flex justify-between items-center font-bold text-slate-900 cursor-pointer list-none">
+            <span>Apakah melayani pengiriman dan pemasangan ke luar kota?</span>
+            <span class="text-blue-600 group-open:rotate-180 transition">&darr;</span>
+          </summary>
+          <p class="mt-4 text-sm text-slate-600 leading-relaxed">
+            Tentu. Kami melayani pengiriman ke seluruh wilayah Indonesia dengan pengemasan aman dan panduan pemasangan video call langsung atau teknisi rekanan di berbagai kota besar.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <span class="text-xl font-bold tracking-tight text-white block">ENAGIC<span class="text-blue-500">.ID</span></span>
+          <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+            Distributor Resmi Mesin Pengolah Air Enagic Kangen Water Indonesia. Menyediakan unit baru, aksesoris original, filter pengganti, dan cairan pembersih.
+          </p>
+        </div>
+        <div>
+          <p class="text-sm font-semibold text-slate-200 mb-2">Kontak Layanan</p>
+          <p class="text-xs text-slate-400">WhatsApp: +62 812-3456-7890</p>
+          <p class="text-xs text-slate-400 mt-1">Layanan Servis & Edukasi: Senin - Sabtu (08:00 - 17:00 WIB)</p>
+        </div>
+        <div>
+          <p class="text-sm font-semibold text-slate-200 mb-2">Disclaimer Resmi</p>
+          <p class="text-[11px] text-slate-500 leading-relaxed">
+            Website ini dikelola oleh Independent Distributor resmi Enagic. Kangen Water® dan Leveluk® adalah merek dagang terdaftar milik Enagic Co., Ltd. Mesin ini berfungsi sebagai perangkat pengolah air rumah tangga.
+          </p>
+        </div>
+      </div>
+      <div class="border-t border-slate-800/80 pt-6 text-center text-xs text-slate-600">
+        &copy; 2026 Authorized Enagic Distributor Indonesia. All rights reserved.
+      </div>
+    </div>
   </footer>
 
 </body>
