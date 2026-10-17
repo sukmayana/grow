@@ -3,109 +3,276 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Distributor Resmi Mesin Enagic Kangen Water Indonesia</title>
-  <meta name="description" content="Dapatkan mesin ionisasi air Enagic Kangen Water original bergaransi resmi. K8, SD501, dan JRIV. Konsultasi dan demo unit gratis.">
+  <title>Prastica Reload - Aplikasi Agen Pulsa & PPOB Termurah | CV Mitra Pulsa Mandiri</title>
   
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
   <!-- Google Fonts: Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              200: '#bfdbfe',
+              500: '#0284c7',
+              600: '#0369a1',
+              700: '#075985',
+              navy: '#0b192c',
+              accent: '#06b6d4',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
   <style>
-    body { font-family: 'Inter', sans-serif; }
+    /* Custom Scrollbar & Utilities */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+    .glass-effect {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+    }
   </style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased">
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-cyan-500 selection:text-white">
 
-  <!-- NAVBAR -->
-  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-      <div class="flex items-center space-x-3">
-        <div class="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center text-white font-black text-xl shadow-md">
-          E
+  <!-- ================= NAVBAR ================= -->
+  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 glass-effect border-b border-slate-200/80 shadow-sm" id="main-nav">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-3 group">
+          <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-brand-600 to-cyan-400 flex items-center justify-center text-white shadow-md shadow-brand-500/20 group-hover:scale-105 transition-transform">
+            <i data-lucide="zap" class="w-6 h-6 fill-current"></i>
+          </div>
+          <div>
+            <span class="text-xl font-extrabold tracking-tight text-slate-900 flex items-center gap-1">
+              Prastica<span class="text-cyan-600">Reload</span>
+            </span>
+            <span class="block text-[10px] uppercase font-semibold text-slate-400 tracking-wider">CV Mitra Pulsa Mandiri</span>
+          </div>
+        </a>
+
+        <!-- Desktop Nav Links -->
+        <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-slate-600">
+          <a href="#keunggulan" class="hover:text-brand-600 transition-colors">Keunggulan</a>
+          <a href="#layanan" class="hover:text-brand-600 transition-colors">Layanan & Produk</a>
+          <a href="#simulasi" class="hover:text-brand-600 transition-colors">Simulasi Untung</a>
+          <a href="#fitur" class="hover:text-brand-600 transition-colors">Fitur Agen</a>
+          <a href="#faq" class="hover:text-brand-600 transition-colors">FAQ</a>
+          <a href="#kontak" class="hover:text-brand-600 transition-colors">Kontak</a>
+        </nav>
+
+        <!-- CTA Buttons -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="https://wa.me/628551199002?text=Halo%20CS%20Prastica%20Reload,%20saya%20ingin%20daftar%20agen" target="_blank" class="px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-700 hover:text-brand-600 hover:bg-slate-100 transition-all flex items-center gap-1.5">
+            <i data-lucide="message-circle" class="w-4 h-4 text-emerald-500"></i>
+            CS Agen
+          </a>
+          <a href="#download" class="px-5 py-2.5 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-brand-600 to-cyan-500 hover:from-brand-700 hover:to-cyan-600 shadow-md shadow-cyan-500/20 hover:shadow-cyan-500/35 transition-all flex items-center gap-2">
+            <i data-lucide="download" class="w-4 h-4"></i>
+            Download APK
+          </a>
         </div>
-        <div>
-          <span class="text-xl font-bold tracking-tight text-slate-900 block leading-tight">ENAGIC<span class="text-blue-600">.ID</span></span>
-          <span class="text-[10px] text-slate-500 uppercase tracking-widest font-semibold">Authorized Independent Distributor</span>
-        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-toggle" class="lg:hidden p-2 rounded-xl text-slate-700 hover:bg-slate-100 transition-colors" aria-label="Buka Menu">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
       </div>
+    </div>
 
-      <nav class="hidden md:flex items-center space-x-8 font-medium text-sm text-slate-600">
-        <a href="#keunggulan" class="hover:text-blue-600 transition">Keunggulan</a>
-        <a href="#jenis-air" class="hover:text-blue-600 transition">5 Tipe Air</a>
-        <a href="#produk" class="hover:text-blue-600 transition">Katalog Mesin</a>
-        <a href="#faq" class="hover:text-blue-600 transition">FAQ</a>
-      </nav>
-
-      <div>
-        <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20ingin%20konsultasi%20pembelian%20mesin%20Enagic" target="_blank"
-           class="inline-flex items-center px-5 py-2.5 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-sm transition shadow-sm hover:shadow-md">
-          <svg class="w-4 h-4 mr-2 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.592 2.654-.696c1.001.554 1.83.844 2.806.844h.005c3.182 0 5.768-2.586 5.768-5.766 0-3.18-2.586-5.767-5.773-5.767zm7.969 5.766c0 4.406-3.584 7.99-7.969 7.99-1.379 0-2.67-.354-3.79-1.026l-4.241 1.11 1.13-4.133c-.767-1.189-1.173-2.571-1.173-3.941 0-4.406 3.584-7.99 7.969-7.99 4.385 0 8.074 3.584 8.074 7.99z"/></svg>
-          Konsultasi Gratis
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-6 space-y-3 shadow-xl">
+      <a href="#keunggulan" class="block px-3 py-2 rounded-lg font-medium text-slate-700 hover:bg-slate-100">Keunggulan</a>
+      <a href="#layanan" class="block px-3 py-2 rounded-lg font-medium text-slate-700 hover:bg-slate-100">Layanan & Produk</a>
+      <a href="#simulasi" class="block px-3 py-2 rounded-lg font-medium text-slate-700 hover:bg-slate-100">Simulasi Untung</a>
+      <a href="#fitur" class="block px-3 py-2 rounded-lg font-medium text-slate-700 hover:bg-slate-100">Fitur Agen</a>
+      <a href="#faq" class="block px-3 py-2 rounded-lg font-medium text-slate-700 hover:bg-slate-100">FAQ</a>
+      <a href="#kontak" class="block px-3 py-2 rounded-lg font-medium text-slate-700 hover:bg-slate-100">Kontak</a>
+      <div class="pt-2 flex flex-col gap-2">
+        <a href="#download" class="w-full text-center py-2.5 rounded-xl font-bold text-white bg-brand-600 hover:bg-brand-700 flex items-center justify-center gap-2">
+          <i data-lucide="download" class="w-4 h-4"></i> Download Aplikasi Gratis
         </a>
       </div>
     </div>
   </header>
 
-  <!-- HERO SECTION -->
-  <section class="relative pt-12 pb-20 lg:pt-20 lg:pb-32 overflow-hidden bg-gradient-to-b from-blue-50/60 to-white">
+  <!-- ================= HERO SECTION ================= -->
+  <section class="pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden relative">
+    <div class="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(6,182,212,0.15),rgba(255,255,255,0))]"></div>
+    
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
         
+        <!-- Left Content -->
         <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-100 text-blue-700 text-xs font-semibold uppercase tracking-wider">
-            <span class="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
-            Teknologi Elektrolisis Medis Original Jepang
+          <!-- Trust Badge -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-50 border border-cyan-200 text-cyan-800 text-xs sm:text-sm font-semibold shadow-sm">
+            <span class="flex h-2 w-2 rounded-full bg-cyan-500 animate-ping"></span>
+            <i data-lucide="shield-check" class="w-4 h-4 text-cyan-600"></i>
+            <span>100.000+ Unduhan &middot; 50.000+ Agen Aktif di Indonesia</span>
           </div>
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight">
-            Ubah Kualitas Air Minum Keluarga Langsung dari Keran Anda
+
+          <!-- Headline -->
+          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.15]">
+            Mulai Usaha Konter Pulsa & PPOB Termurah <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 via-cyan-600 to-sky-500">Langsung dari HP!</span>
           </h1>
-          <p class="text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-            Hadirkan mesin ionisasi air berstandar medis dari <strong>Enagic Jepang</strong>. Menghasilkan air kaya antioksidan hidrogen aktif, hidrasi optimal, dan serbaguna untuk kebutuhan sanitasi serta kecantikan harian.
+
+          <!-- Subheadline -->
+          <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+            Dapatkan harga modal distributor pertama untuk Pulsa, Paket Data, Token PLN, E-Wallet, dan Tagihan Bulanan. Transaksi 24 jam nonstop dengan sistem otomatis super kilat.
           </p>
-          <div class="pt-2 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20tertarik%20dengan%20demo%20unit%20mesin%20Enagic" target="_blank"
-               class="px-8 py-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-center shadow-lg shadow-blue-500/25 transition">
-              Jadwalkan Demo Unit & Cek Kualitas Air
+
+          <!-- Buttons & Call-to-actions -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+            <a href="#download" class="w-full sm:w-auto px-8 py-4 rounded-2xl font-bold text-white bg-slate-950 hover:bg-slate-800 shadow-xl shadow-slate-900/15 flex items-center justify-center gap-3 transition-transform hover:-translate-y-0.5">
+              <i data-lucide="smartphone" class="w-5 h-5 text-cyan-400"></i>
+              <span>Download APK Resmi</span>
             </a>
-            <a href="#produk" class="px-8 py-4 rounded-xl bg-white hover:bg-slate-100 text-slate-700 font-semibold border border-slate-300 text-center transition">
-              Lihat Varian Mesin
+            <a href="https://wa.me/628551199002?text=Halo%20Prastica%20Reload,%20saya%20ingin%20panduan%20pendaftaran%20agen" target="_blank" class="w-full sm:w-auto px-7 py-4 rounded-2xl font-bold text-slate-800 bg-white border border-slate-200 hover:border-slate-300 hover:bg-slate-50 shadow-sm flex items-center justify-center gap-3 transition-all">
+              <i data-lucide="phone-call" class="w-5 h-5 text-emerald-500"></i>
+              <span>CS WhatsApp: 0855-1199-002</span>
             </a>
           </div>
 
-          <!-- Trust Badges -->
-          <div class="pt-8 border-t border-slate-200 grid grid-cols-3 gap-4 text-center">
+          <!-- Micro Highlights -->
+          <div class="pt-6 grid grid-cols-3 gap-3 border-t border-slate-200 text-left">
             <div>
-              <p class="text-2xl font-bold text-slate-900">45+ Tahun</p>
-              <p class="text-xs text-slate-500 font-medium mt-0.5">Pengalaman Global</p>
+              <div class="text-xl sm:text-2xl font-extrabold text-slate-900">Rp 10.000</div>
+              <p class="text-xs text-slate-500">Min. Deposit Awal</p>
             </div>
             <div>
-              <p class="text-2xl font-bold text-slate-900">ISO 13485</p>
-              <p class="text-xs text-slate-500 font-medium mt-0.5">Standar Alat Medis</p>
+              <div class="text-xl sm:text-2xl font-extrabold text-emerald-600">0 Detik</div>
+              <p class="text-xs text-slate-500">Auto Proses Server</p>
             </div>
             <div>
-              <p class="text-2xl font-bold text-slate-900">Garansi Resmi</p>
-              <p class="text-xs text-slate-500 font-medium mt-0.5">Sparepart & Servis</p>
+              <div class="text-xl sm:text-2xl font-extrabold text-cyan-600">Bebas Biaya</div>
+              <p class="text-xs text-slate-500">Pendaftaran Agen Gratis</p>
             </div>
           </div>
         </div>
 
-        <div class="lg:col-span-5 relative flex justify-center">
-          <div class="relative w-full max-w-md bg-gradient-to-tr from-blue-600 to-indigo-500 rounded-3xl p-1 shadow-2xl">
-            <div class="bg-white rounded-[22px] p-6 text-center space-y-6">
-              <div class="w-full h-64 bg-slate-100 rounded-xl flex items-center justify-center border border-dashed border-slate-300 relative overflow-hidden">
-                <span class="text-slate-400 font-medium text-sm">[ Foto Unit Mesin Leveluk K8 ]</span>
+        <!-- Right Visual Mockup -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative w-full max-w-sm">
+            <!-- Glow background -->
+            <div class="absolute -top-4 -left-4 w-72 h-72 bg-cyan-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
+            <div class="absolute -bottom-4 -right-4 w-72 h-72 bg-brand-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
+            
+            <!-- Phone Container -->
+            <div class="relative bg-slate-900 p-4 rounded-[40px] shadow-2xl border-4 border-slate-800">
+              <div class="bg-slate-900 rounded-[32px] overflow-hidden border border-slate-800 text-white">
+                
+                <!-- Phone Top Bar -->
+                <div class="px-5 pt-3 pb-2 flex justify-between items-center text-xs text-slate-400">
+                  <span>09:41</span>
+                  <div class="flex items-center gap-1.5">
+                    <i data-lucide="wifi" class="w-3.5 h-3.5"></i>
+                    <i data-lucide="battery-charging" class="w-3.5 h-3.5"></i>
+                  </div>
+                </div>
+
+                <!-- App Header Inside Mockup -->
+                <div class="p-4 bg-gradient-to-r from-brand-700 to-cyan-600">
+                  <div class="flex justify-between items-center">
+                    <div>
+                      <p class="text-[11px] text-cyan-100">Selamat Datang,</p>
+                      <h4 class="font-bold text-sm">Mitra Konter Berkah</h4>
+                    </div>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-white/20 uppercase tracking-wider">VIP Agen</span>
+                  </div>
+
+                  <!-- Saldo Card -->
+                  <div class="mt-3 p-3 bg-white/10 backdrop-blur-md rounded-xl flex justify-between items-center">
+                    <div>
+                      <span class="text-[10px] text-cyan-100">Saldo Deposit</span>
+                      <p class="text-base font-extrabold tracking-wide">Rp 1.485.500</p>
+                    </div>
+                    <button class="px-3 py-1 bg-white text-brand-700 text-xs font-bold rounded-lg shadow-sm">
+                      + Top Up
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Mockup Quick Menus -->
+                <div class="p-4 bg-white text-slate-800 space-y-4">
+                  <p class="text-xs font-bold text-slate-400 tracking-wider uppercase">Menu Populer</p>
+                  <div class="grid grid-cols-4 gap-2.5 text-center text-[10px] font-medium">
+                    <div class="flex flex-col items-center gap-1 p-2 rounded-xl bg-slate-50 hover:bg-slate-100">
+                      <div class="w-8 h-8 rounded-lg bg-red-100 text-red-600 flex items-center justify-center">
+                        <i data-lucide="smartphone" class="w-4 h-4"></i>
+                      </div>
+                      <span>Pulsa</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-1 p-2 rounded-xl bg-slate-50 hover:bg-slate-100">
+                      <div class="w-8 h-8 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center">
+                        <i data-lucide="globe" class="w-4 h-4"></i>
+                      </div>
+                      <span>Data</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-1 p-2 rounded-xl bg-slate-50 hover:bg-slate-100">
+                      <div class="w-8 h-8 rounded-lg bg-amber-100 text-amber-600 flex items-center justify-center">
+                        <i data-lucide="zap" class="w-4 h-4"></i>
+                      </div>
+                      <span>PLN</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-1 p-2 rounded-xl bg-slate-50 hover:bg-slate-100">
+                      <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center">
+                        <i data-lucide="wallet" class="w-4 h-4"></i>
+                      </div>
+                      <span>E-Wallet</span>
+                    </div>
+                  </div>
+
+                  <!-- Live Transaction Notification Widget -->
+                  <div class="p-2.5 rounded-xl bg-emerald-50 border border-emerald-200 flex items-center gap-3">
+                    <div class="w-7 h-7 rounded-full bg-emerald-500 text-white flex items-center justify-center flex-shrink-0">
+                      <i data-lucide="check" class="w-4 h-4"></i>
+                    </div>
+                    <div class="text-[11px] leading-tight text-slate-700">
+                      <p class="font-bold text-emerald-900">SN: 039281729402941</p>
+                      <p class="text-slate-500">PLN Token 50K Sukses (2 Detik)</p>
+                    </div>
+                  </div>
+
+                  <!-- Printer Feature Pill -->
+                  <div class="p-2.5 rounded-xl bg-slate-100 flex items-center justify-between text-xs">
+                    <span class="flex items-center gap-1.5 text-slate-600 font-medium">
+                      <i data-lucide="printer" class="w-4 h-4 text-cyan-600"></i>
+                      Cetak Struk Bluetooth
+                    </span>
+                    <span class="text-cyan-700 font-bold">Terhubung</span>
+                  </div>
+                </div>
+
               </div>
-              <div>
-                <span class="px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-xs font-bold uppercase tracking-wide">Flagship Model</span>
-                <h3 class="text-2xl font-bold text-slate-900 mt-2">Leveluk K8 (Kangen 8)</h3>
-                <p class="text-slate-500 text-sm mt-1">8 Pelat Elektroda Platinum-Coated Titanium dengan Layar Sentuh Full Color Multi-Bahasa.</p>
-              </div>
-              <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20minta%20info%20promo%20Leveluk%20K8" class="block w-full py-3 rounded-lg bg-blue-50 text-blue-700 font-bold hover:bg-blue-100 transition text-sm">
-                Minta Simulasi Harga & Cicilan &rarr;
-              </a>
             </div>
           </div>
         </div>
@@ -114,188 +281,281 @@
     </div>
   </section>
 
-  <!-- 5 TIPE AIR SECTION -->
-  <section id="jenis-air" class="py-20 bg-white">
+  <!-- ================= VALUE PROPOSITION / KEUNGGULAN ================= -->
+  <section id="keunggulan" class="py-20 bg-white border-y border-slate-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto mb-16">
-        <h2 class="text-xs font-bold tracking-widest text-blue-600 uppercase mb-2">Multifungsi 1 Mesin</h2>
-        <p class="text-3xl sm:text-4xl font-extrabold text-slate-900">1 Mesin Menghasilkan 5 Tipe Air Berbeda</p>
-        <p class="mt-4 text-slate-600">Teknologi ionisasi memisahkan molekul air menjadi beberapa tingkat pH untuk aneka kebutuhan keluarga.</p>
+        <h2 class="text-xs uppercase font-bold tracking-widest text-cyan-600 mb-2">Kenapa Memilih Prastica Reload?</h2>
+        <p class="text-3xl sm:text-4xl font-extrabold text-slate-900">Solusi Bisnis Konter & Loket PPOB Terbaik</p>
+        <p class="mt-3 text-slate-600 text-sm sm:text-base">Dukungan infrastruktur server handal dari CV Mitra Pulsa Mandiri untuk memastikan kelancaran transaksi jutaan rupiah Anda setiap hari.</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
-        <!-- 1: Kangen Water -->
-        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-blue-300 hover:shadow-lg transition">
-          <div class="w-12 h-12 rounded-xl bg-blue-600 text-white flex items-center justify-center font-extrabold text-lg mb-4">
-            9.5
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Keunggulan 1 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/5 transition-all group">
+          <div class="w-12 h-12 rounded-xl bg-blue-100 text-brand-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+            <i data-lucide="tag" class="w-6 h-6"></i>
           </div>
-          <h3 class="text-lg font-bold text-slate-900">Kangen Water</h3>
-          <p class="text-xs text-blue-600 font-semibold mb-2">pH 8.5 – 9.5</p>
-          <p class="text-sm text-slate-600 leading-relaxed">Air minum harian kaya antioksidan hidrogen terlarut dan mikromolekul untuk hidrasi optimal dan kesegaran tubuh.</p>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Harga Modal Konter</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Dapatkan harga modal termurah langsung dari server pusat, memberikan Anda margin keuntungan maksimal saat menjual kembali.
+          </p>
         </div>
 
-        <!-- 2: Clean Water -->
-        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-emerald-300 hover:shadow-lg transition">
-          <div class="w-12 h-12 rounded-xl bg-emerald-500 text-white flex items-center justify-center font-extrabold text-lg mb-4">
-            7.0
+        <!-- Keunggulan 2 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/5 transition-all group">
+          <div class="w-12 h-12 rounded-xl bg-cyan-100 text-cyan-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+            <i data-lucide="zap" class="w-6 h-6"></i>
           </div>
-          <h3 class="text-lg font-bold text-slate-900">Clean Water</h3>
-          <p class="text-xs text-emerald-600 font-semibold mb-2">pH Netral 7.0</p>
-          <p class="text-sm text-slate-600 leading-relaxed">Air murni terfiltrasi bebas klorin, ideal untuk konsumsi obat medis harian dan pembuatan susu formula bayi.</p>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Transaksi Kilat 24 Jam</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Sistem otomatis terintegrasi langsung ke provider telekomunikasi dan biller resmi. Transaksi diproses dalam hitungan detik nonstop.
+          </p>
         </div>
 
-        <!-- 3: Beauty Water -->
-        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-pink-300 hover:shadow-lg transition">
-          <div class="w-12 h-12 rounded-xl bg-pink-500 text-white flex items-center justify-center font-extrabold text-lg mb-4">
-            6.0
+        <!-- Keunggulan 3 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/5 transition-all group">
+          <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+            <i data-lucide="headphones" class="w-6 h-6"></i>
           </div>
-          <h3 class="text-lg font-bold text-slate-900">Beauty Water</h3>
-          <p class="text-xs text-pink-600 font-semibold mb-2">pH 5.5 – 6.0</p>
-          <p class="text-sm text-slate-600 leading-relaxed">Sifat asam lemah dengan efek astringent alami. Sangat cocok sebagai toner wajah, perawatan rambut, dan cuci muka.</p>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">CS Responsif & Siap Bantu</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Customer Support ramah dan solutif selalu siap mengawal kendala transaksi atau deposit Anda melalui WhatsApp & Telegram resmi.
+          </p>
         </div>
 
-        <!-- 4: Strong Acidic -->
-        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-red-300 hover:shadow-lg transition">
-          <div class="w-12 h-12 rounded-xl bg-red-600 text-white flex items-center justify-center font-extrabold text-lg mb-4">
-            2.5
+        <!-- Keunggulan 4 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/5 transition-all group">
+          <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+            <i data-lucide="badge-percent" class="w-6 h-6"></i>
           </div>
-          <h3 class="text-lg font-bold text-slate-900">Strong Acidic</h3>
-          <p class="text-xs text-red-600 font-semibold mb-2">pH 2.5</p>
-          <p class="text-sm text-slate-600 leading-relaxed">Sanitasi tingkat tinggi untuk desinfeksi peralatan dapur, mencuci tangan antibakteri, dan membersihkan luka ringan.</p>
-        </div>
-
-        <!-- 5: Strong Kangen -->
-        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-indigo-300 hover:shadow-lg transition">
-          <div class="w-12 h-12 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-extrabold text-lg mb-4">
-            11.5
-          </div>
-          <h3 class="text-lg font-bold text-slate-900">Strong Kangen</h3>
-          <p class="text-xs text-indigo-600 font-semibold mb-2">pH 11.5</p>
-          <p class="text-sm text-slate-600 leading-relaxed">Daya emulsifikasi minyak yang kuat, efektif membilas residu pestisida pada sayur & buah serta membersihkan noda lemak.</p>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Bebas Biaya Admin</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Registrasi 100% gratis tanpa biaya bulanan tersembunyi. Isi deposit sesuai nominal tanpa potongan member fee.
+          </p>
         </div>
       </div>
+
+      <!-- Deposit Channels Banner -->
+      <div class="mt-12 p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-slate-900 via-brand-navy to-slate-900 text-white">
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-6">
+          <div>
+            <div class="flex items-center gap-2 text-cyan-400 text-xs font-bold tracking-wider uppercase mb-1">
+              <i data-lucide="credit-card" class="w-4 h-4"></i>
+              Kemudahan Top Up Saldo
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold">Deposit Multi-Metode Otomatis Masuk</h3>
+            <p class="text-slate-300 text-sm mt-1">Tersedia transfer Bank Nasional, Instant QRIS 24 Jam, dan Gerai Retail.</p>
+          </div>
+          <!-- Method Badges -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-end gap-2.5 font-bold text-xs">
+            <span class="px-3.5 py-1.5 rounded-lg bg-white/10 backdrop-blur-sm border border-white/15">BCA</span>
+            <span class="px-3.5 py-1.5 rounded-lg bg-white/10 backdrop-blur-sm border border-white/15">MANDIRI</span>
+            <span class="px-3.5 py-1.5 rounded-lg bg-white/10 backdrop-blur-sm border border-white/15">BRI</span>
+            <span class="px-3.5 py-1.5 rounded-lg bg-white/10 backdrop-blur-sm border border-white/15">BNI</span>
+            <span class="px-3.5 py-1.5 rounded-lg bg-cyan-500 text-slate-950 font-extrabold shadow-sm">QRIS INSTANT</span>
+            <span class="px-3.5 py-1.5 rounded-lg bg-white/10 backdrop-blur-sm border border-white/15">Alfamart</span>
+            <span class="px-3.5 py-1.5 rounded-lg bg-white/10 backdrop-blur-sm border border-white/15">Indomaret</span>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <!-- PRODUK KATALOG -->
-  <section id="produk" class="py-20 bg-slate-100">
+  <!-- ================= KATALOG PRODUK INTERAKTIF ================= -->
+  <section id="layanan" class="py-20 bg-slate-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-3xl mx-auto mb-16">
-        <h2 class="text-xs font-bold tracking-widest text-blue-600 uppercase mb-2">Varian Perangkat</h2>
-        <p class="text-3xl sm:text-4xl font-extrabold text-slate-900">Pilihan Tipe Mesin Leveluk Enagic</p>
-        <p class="mt-4 text-slate-600">Pilih unit mesin sesuai kapasitas harian keluarga atau kebutuhan tempat usaha Anda.</p>
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-xs uppercase font-bold tracking-widest text-cyan-600 mb-2">Katalog Lengkap</h2>
+        <p class="text-3xl sm:text-4xl font-extrabold text-slate-900">Satu Aplikasi untuk Ribuan Produk Digital</p>
+        <p class="mt-2 text-slate-600 text-sm sm:text-base">Mulai dari isi pulsa hingga bayar angsuran, semua transaksi pelanggan dapat Anda layani dari satu saldo.</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Tab Buttons -->
+      <div class="flex flex-wrap justify-center gap-2 mb-8">
+        <button onclick="switchTab('pulsa')" id="tab-btn-pulsa" class="tab-btn active px-5 py-2.5 rounded-xl font-bold text-sm bg-brand-600 text-white shadow-md shadow-brand-500/20 transition-all flex items-center gap-2">
+          <i data-lucide="smartphone" class="w-4 h-4"></i>
+          Pulsa & Paket Data
+        </button>
+        <button onclick="switchTab('ewallet')" id="tab-btn-ewallet" class="tab-btn px-5 py-2.5 rounded-xl font-bold text-sm bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 transition-all flex items-center gap-2">
+          <i data-lucide="wallet" class="w-4 h-4"></i>
+          E-Wallet & E-Toll
+        </button>
+        <button onclick="switchTab('ppob')" id="tab-btn-ppob" class="tab-btn px-5 py-2.5 rounded-xl font-bold text-sm bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 transition-all flex items-center gap-2">
+          <i data-lucide="receipt" class="w-4 h-4"></i>
+          Tagihan & PPOB
+        </button>
+        <button onclick="switchTab('game')" id="tab-btn-game" class="tab-btn px-5 py-2.5 rounded-xl font-bold text-sm bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 transition-all flex items-center gap-2">
+          <i data-lucide="gamepad-2" class="w-4 h-4"></i>
+          Voucher Game & Hiburan
+        </button>
+      </div>
+
+      <!-- Tab Contents -->
+      <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200/80 shadow-sm min-h-[300px]">
         
-        <!-- CARD 1: JRIV -->
-        <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition flex flex-col justify-between">
-          <div>
-            <div class="h-44 bg-slate-50 rounded-xl mb-6 flex items-center justify-center border border-dashed border-slate-200">
-              <span class="text-slate-400 text-xs font-semibold">[ Foto Leveluk JRIV ]</span>
+        <!-- Tab: Pulsa & Data -->
+        <div id="tab-content-pulsa" class="tab-panel grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/50 hover:bg-white hover:border-slate-300 transition-all">
+            <div class="flex items-center gap-3 mb-2">
+              <span class="w-8 h-8 rounded-lg bg-red-600 text-white font-bold flex items-center justify-center text-xs">TS</span>
+              <h4 class="font-bold text-slate-900">Telkomsel & by.U</h4>
             </div>
-            <h3 class="text-2xl font-bold text-slate-900">Leveluk JRIV</h3>
-            <p class="text-sm text-slate-500 mt-1">Pilihan hemat untuk keluarga kecil (1-3 orang)</p>
-            
-            <ul class="mt-6 space-y-3 text-sm text-slate-600">
-              <li class="flex items-center gap-2">
-                <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                <strong>4 Pelat Elektroda</strong> Titanium berpelapis Platinum
-              </li>
-              <li class="flex items-center gap-2">
-                <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                Konsumsi daya hemat (120W)
-              </li>
-              <li class="flex items-center gap-2">
-                <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                Panel display LCD informatif
-              </li>
-              <li class="flex items-center gap-2">
-                <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                Garansi Resmi 3 Tahun
-              </li>
-            </ul>
+            <p class="text-xs text-slate-500">Pulsa Reguler, Transfer, Kuota MAXstream, OMG, Data Harian & Bulanan.</p>
           </div>
-          <div class="mt-8">
-            <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20info%20spesifikasi%20dan%20harga%20Leveluk%20JRIV" target="_blank"
-               class="block w-full py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-semibold text-center text-sm transition">
-              Cek Brosur & Harga
-            </a>
+          <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/50 hover:bg-white hover:border-slate-300 transition-all">
+            <div class="flex items-center gap-3 mb-2">
+              <span class="w-8 h-8 rounded-lg bg-amber-500 text-white font-bold flex items-center justify-center text-xs">IS</span>
+              <h4 class="font-bold text-slate-900">Indosat Ooredoo</h4>
+            </div>
+            <p class="text-xs text-slate-500">Freedom Internet, Freedom Combo, Pulsa Gift, dan kuota rollover.</p>
+          </div>
+          <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/50 hover:bg-white hover:border-slate-300 transition-all">
+            <div class="flex items-center gap-3 mb-2">
+              <span class="w-8 h-8 rounded-lg bg-blue-600 text-white font-bold flex items-center justify-center text-xs">XL</span>
+              <h4 class="font-bold text-slate-900">XL & AXIS</h4>
+            </div>
+            <p class="text-xs text-slate-500">Xtra Combo Flex, AXIS Bronet, AIGO Mini, Pulsa Reguler termurah.</p>
+          </div>
+          <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/50 hover:bg-white hover:border-slate-300 transition-all">
+            <div class="flex items-center gap-3 mb-2">
+              <span class="w-8 h-8 rounded-lg bg-rose-600 text-white font-bold flex items-center justify-center text-xs">SF</span>
+              <h4 class="font-bold text-slate-900">Smartfren</h4>
+            </div>
+            <p class="text-xs text-slate-500">Paket Unlimited Nonstop, Kuota Kuotaan, dan Pulsa Nominal Fleksibel.</p>
+          </div>
+          <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/50 hover:bg-white hover:border-slate-300 transition-all">
+            <div class="flex items-center gap-3 mb-2">
+              <span class="w-8 h-8 rounded-lg bg-indigo-600 text-white font-bold flex items-center justify-center text-xs">3</span>
+              <h4 class="font-bold text-slate-900">Tri (3) Indonesia</h4>
+            </div>
+            <p class="text-xs text-slate-500">AlwaysOn (AON), Happy, Kuota Isi Ulang & Perdana VCR.</p>
+          </div>
+          <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/50 hover:bg-white hover:border-slate-300 transition-all">
+            <div class="flex items-center gap-3 mb-2">
+              <span class="w-8 h-8 rounded-lg bg-emerald-600 text-white font-bold flex items-center justify-center text-xs">MS</span>
+              <h4 class="font-bold text-slate-900">Masa Aktif Kartu</h4>
+            </div>
+            <p class="text-xs text-slate-500">Perpanjangan masa aktif semua operator tanpa potong paket data.</p>
           </div>
         </div>
 
-        <!-- CARD 2: SD501 (Best Seller) -->
-        <div class="bg-white rounded-2xl p-8 border-2 border-blue-500 shadow-xl relative flex flex-col justify-between">
-          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-blue-600 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wide">
-            Terpopuler Dunia
+        <!-- Tab: E-Wallet -->
+        <div id="tab-content-ewallet" class="tab-panel hidden grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/50 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-blue-500 text-white font-bold flex items-center justify-center text-xs">DANA</div>
+            <div><p class="font-bold text-sm">Top Up DANA</p><span class="text-xs text-slate-500">Nominal 10k - 1jt</span></div>
           </div>
-          <div>
-            <div class="h-44 bg-slate-50 rounded-xl mb-6 flex items-center justify-center border border-dashed border-slate-200">
-              <span class="text-slate-400 text-xs font-semibold">[ Foto Leveluk SD501 ]</span>
-            </div>
-            <h3 class="text-2xl font-bold text-slate-900">Leveluk SD501</h3>
-            <p class="text-sm text-slate-500 mt-1">Standar emas keluarga Indonesia (4-7 orang)</p>
-            
-            <ul class="mt-6 space-y-3 text-sm text-slate-600">
-              <li class="flex items-center gap-2">
-                <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                <strong>7 Pelat Elektroda</strong> Titanium Platinum
-              </li>
-              <li class="flex items-center gap-2">
-                <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                Suara panduan audio interaktif
-              </li>
-              <li class="flex items-center gap-2">
-                <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                Produksi stabil & debit air tinggi
-              </li>
-              <li class="flex items-center gap-2">
-                <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                Garansi Resmi 5 Tahun
-              </li>
-            </ul>
+          <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/50 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-purple-700 text-white font-bold flex items-center justify-center text-xs">OVO</div>
+            <div><p class="font-bold text-sm">Top Up OVO</p><span class="text-xs text-slate-500">Instant Masuk</span></div>
           </div>
-          <div class="mt-8">
-            <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20tertarik%20dengan%20promo%20Leveluk%20SD501" target="_blank"
-               class="block w-full py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-center text-sm shadow-md transition">
-              Konsultasi Model SD501
-            </a>
+          <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/50 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-emerald-500 text-white font-bold flex items-center justify-center text-xs">GOPAY</div>
+            <div><p class="font-bold text-sm">GoPay & Driver</p><span class="text-xs text-slate-500">Customer & Driver</span></div>
+          </div>
+          <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/50 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-orange-600 text-white font-bold flex items-center justify-center text-xs">SHOPEE</div>
+            <div><p class="font-bold text-sm">ShopeePay</p><span class="text-xs text-slate-500">Biaya Admin Murah</span></div>
+          </div>
+          <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/50 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-yellow-500 text-slate-900 font-bold flex items-center justify-center text-xs">MAXIM</div>
+            <div><p class="font-bold text-sm">Maxim Driver</p><span class="text-xs text-slate-500">Saldo Pengemudi</span></div>
+          </div>
+          <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/50 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-sky-600 text-white font-bold flex items-center justify-center text-xs">BRIZZI</div>
+            <div><p class="font-bold text-sm">BRIZZI & TapCash</p><span class="text-xs text-slate-500">Kartu E-Toll</span></div>
+          </div>
+          <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/50 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-blue-900 text-white font-bold flex items-center justify-center text-xs">EMONEY</div>
+            <div><p class="font-bold text-sm">Mandiri E-Money</p><span class="text-xs text-slate-500">Update Saldo NFC</span></div>
+          </div>
+          <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/50 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-red-600 text-white font-bold flex items-center justify-center text-xs">LINK</div>
+            <div><p class="font-bold text-sm">LinkAja</p><span class="text-xs text-slate-500">Proses Cepat</span></div>
           </div>
         </div>
 
-        <!-- CARD 3: K8 -->
-        <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition flex flex-col justify-between">
-          <div>
-            <div class="h-44 bg-slate-50 rounded-xl mb-6 flex items-center justify-center border border-dashed border-slate-200">
-              <span class="text-slate-400 text-xs font-semibold">[ Foto Leveluk K8 ]</span>
+        <!-- Tab: Tagihan PPOB -->
+        <div id="tab-content-ppob" class="tab-panel hidden grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/50 flex items-start gap-3">
+            <div class="p-2.5 rounded-lg bg-amber-100 text-amber-600"><i data-lucide="zap" class="w-5 h-5"></i></div>
+            <div>
+              <h4 class="font-bold text-slate-900">Listrik PLN Pasca & Token</h4>
+              <p class="text-xs text-slate-500 mt-1">Beli token listrik prabayar atau bayar tagihan bulanan pascabayar.</p>
             </div>
-            <h3 class="text-2xl font-bold text-slate-900">Leveluk K8</h3>
-            <p class="text-sm text-slate-500 mt-1">Performa antioksidan tertinggi & layar sentuh modern</p>
-            
-            <ul class="mt-6 space-y-3 text-sm text-slate-600">
-              <li class="flex items-center gap-2">
-                <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                <strong>8 Pelat Elektroda</strong> Titanium Platinum
-              </li>
-              <li class="flex items-center gap-2">
-                <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                Layar Sentuh LCD Full Color Multi-Bahasa
-              </li>
-              <li class="flex items-center gap-2">
-                <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                Multi-Voltage Otomatis (Global Travel Ready)
-              </li>
-              <li class="flex items-center gap-2">
-                <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                Garansi Resmi 5 Tahun
-              </li>
-            </ul>
           </div>
-          <div class="mt-8">
-            <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20minta%20info%20lengkap%20paket%20Leveluk%20K8" target="_blank"
-               class="block w-full py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-semibold text-center text-sm transition">
-              Cek Brosur & Harga
-            </a>
+          <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/50 flex items-start gap-3">
+            <div class="p-2.5 rounded-lg bg-blue-100 text-blue-600"><i data-lucide="droplet" class="w-5 h-5"></i></div>
+            <div>
+              <h4 class="font-bold text-slate-900">PDAM Seluruh Indonesia</h4>
+              <p class="text-xs text-slate-500 mt-1">Cakupan lebih dari 150 wilayah PDAM kota dan kabupaten se-Indonesia.</p>
+            </div>
+          </div>
+          <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/50 flex items-start gap-3">
+            <div class="p-2.5 rounded-lg bg-emerald-100 text-emerald-600"><i data-lucide="heart-pulse" class="w-5 h-5"></i></div>
+            <div>
+              <h4 class="font-bold text-slate-900">BPJS Kesehatan</h4>
+              <p class="text-xs text-slate-500 mt-1">Bayar iuran BPJS Kesehatan keluarga tanpa antre di kantor cabang.</p>
+            </div>
+          </div>
+          <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/50 flex items-start gap-3">
+            <div class="p-2.5 rounded-lg bg-rose-100 text-rose-600"><i data-lucide="flame" class="w-5 h-5"></i></div>
+            <div>
+              <h4 class="font-bold text-slate-900">Gas PGN & Pertagas</h4>
+              <p class="text-xs text-slate-500 mt-1">Pembayaran tagihan gas rumah tangga terintegrasi otomatis.</p>
+            </div>
+          </div>
+          <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/50 flex items-start gap-3">
+            <div class="p-2.5 rounded-lg bg-purple-100 text-purple-600"><i data-lucide="credit-card" class="w-5 h-5"></i></div>
+            <div>
+              <h4 class="font-bold text-slate-900">Cicilan / Multifinance</h4>
+              <p class="text-xs text-slate-500 mt-1">FIF, Adira, BAF, OTO, WOM, Mega Finance, dan lainnya.</p>
+            </div>
+          </div>
+          <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/50 flex items-start gap-3">
+            <div class="p-2.5 rounded-lg bg-sky-100 text-sky-600"><i data-lucide="tv" class="w-5 h-5"></i></div>
+            <div>
+              <h4 class="font-bold text-slate-900">Internet & TV Kabel</h4>
+              <p class="text-xs text-slate-500 mt-1">IndiHome, First Media, MyRepublic, MNC Vision, K-Vision.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab: Game & Hiburan -->
+        <div id="tab-content-game" class="tab-panel hidden grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/50 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-slate-900 text-amber-400 font-extrabold flex items-center justify-center text-xs">ML</div>
+            <div><p class="font-bold text-sm">Mobile Legends</p><span class="text-xs text-slate-500">Diamond & Wkly Pass</span></div>
+          </div>
+          <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/50 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-orange-700 text-white font-extrabold flex items-center justify-center text-xs">FF</div>
+            <div><p class="font-bold text-sm">Free Fire</p><span class="text-xs text-slate-500">Diamond Instan</span></div>
+          </div>
+          <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/50 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-red-600 text-white font-bold flex items-center justify-center text-xs">NFLX</div>
+            <div><p class="font-bold text-sm">Netflix Gift</p><span class="text-xs text-slate-500">Langganan Resmi</span></div>
+          </div>
+          <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/50 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-red-500 text-white font-bold flex items-center justify-center text-xs">VIDIO</div>
+            <div><p class="font-bold text-sm">Vidio Premier</p><span class="text-xs text-slate-500">Liga Inggris & Platinum</span></div>
+          </div>
+          <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/50 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-sky-950 text-cyan-400 font-bold flex items-center justify-center text-xs">DISNEY</div>
+            <div><p class="font-bold text-sm">Disney+ Hotstar</p><span class="text-xs text-slate-500">Voucher 1 & 3 Bulan</span></div>
+          </div>
+          <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/50 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-emerald-600 text-white font-bold flex items-center justify-center text-xs">PUBG</div>
+            <div><p class="font-bold text-sm">PUBG Mobile</p><span class="text-xs text-slate-500">UC Legal Murah</span></div>
+          </div>
+          <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/50 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-blue-800 text-white font-bold flex items-center justify-center text-xs">GENSH</div>
+            <div><p class="font-bold text-sm">Genshin Impact</p><span class="text-xs text-slate-500">Genesis Crystal</span></div>
+          </div>
+          <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/50 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-slate-800 text-white font-bold flex items-center justify-center text-xs">GPLAY</div>
+            <div><p class="font-bold text-sm">Google Play Code</p><span class="text-xs text-slate-500">IDR Regional Code</span></div>
           </div>
         </div>
 
@@ -303,130 +563,493 @@
     </div>
   </section>
 
-  <!-- KENAPA MEMILIH KAMI / LAYANAN AFTER SALES -->
-  <section id="keunggulan" class="py-20 bg-white">
+  <!-- ================= KALKULATOR SIMULASI KEUNTUNGAN ================= -->
+  <section id="simulasi" class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div>
-          <h2 class="text-xs font-bold tracking-widest text-blue-600 uppercase mb-2">Layanan Purna Jual</h2>
-          <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight">
-            Kami Memastikan Mesin Anda Bekerja dengan Air Baku yang Tepat
-          </h3>
-          <p class="mt-4 text-slate-600 leading-relaxed">
-            Mesin elektrolisis membutuhkan kualitas air baku (*feed water*) yang terukur agar pelat elektroda awet dan hasil ionisasi optimal. Kami tidak hanya menjual unit, tetapi mendampingi instalasi dari hulu hingga hilir.
-          </p>
+      <div class="max-w-4xl mx-auto bg-gradient-to-br from-slate-900 via-brand-navy to-slate-900 rounded-3xl p-6 sm:p-10 text-white shadow-2xl relative overflow-hidden">
+        
+        <div class="absolute -right-16 -top-16 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
-          <div class="mt-8 space-y-4">
-            <div class="flex gap-4 items-start">
-              <div class="w-8 h-8 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center font-bold shrink-0">1</div>
-              <div>
-                <h4 class="font-bold text-slate-900">Uji TDS & Kualitas Air Baku</h4>
-                <p class="text-sm text-slate-500">Pengecekan TDS, kekeruhan, dan kontaminan air sebelum instalasi mesin.</p>
+        <div class="text-center max-w-xl mx-auto mb-10">
+          <span class="px-3 py-1 rounded-full bg-cyan-500/20 text-cyan-300 text-xs font-semibold uppercase tracking-wider">
+            Simulasi Cuan Agen
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold mt-3">Hitung Estimasi Keuntungan Konter Anda</h2>
+          <p class="text-slate-300 text-sm mt-2">Berapa potensi penghasilan bersih yang bisa Anda dapatkan setiap bulan?</p>
+        </div>
+
+        <div class="grid md:grid-cols-12 gap-8 items-center">
+          
+          <!-- Slider Controls -->
+          <div class="md:col-span-7 space-y-6">
+            
+            <!-- Slider 1: Transaksi Per Hari -->
+            <div class="space-y-2">
+              <div class="flex justify-between items-center text-sm">
+                <label for="trx-range" class="font-medium text-slate-300">Transaksi Harian:</label>
+                <span class="font-bold text-cyan-400 text-base" id="trx-val-display">50 Transaksi/hari</span>
+              </div>
+              <input type="range" id="trx-range" min="5" max="250" step="5" value="50" class="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-cyan-400">
+              <div class="flex justify-between text-[11px] text-slate-400">
+                <span>5 Trx</span>
+                <span>125 Trx</span>
+                <span>250 Trx</span>
               </div>
             </div>
-            <div class="flex gap-4 items-start">
-              <div class="w-8 h-8 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center font-bold shrink-0">2</div>
-              <div>
-                <h4 class="font-bold text-slate-900">Instalasi Pre-Filter Terpadu</h4>
-                <p class="text-sm text-slate-500">Pemasangan filter sedimen/karbon pendukung sesuai kondisi air rumah Anda.</p>
+
+            <!-- Slider 2: Keuntungan per Transaksi -->
+            <div class="space-y-2">
+              <div class="flex justify-between items-center text-sm">
+                <label for="profit-range" class="font-medium text-slate-300">Rata-rata Profit per Transaksi:</label>
+                <span class="font-bold text-cyan-400 text-base" id="profit-val-display">Rp 2.500</span>
+              </div>
+              <input type="range" id="profit-range" min="1000" max="10000" step="500" value="2500" class="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-cyan-400">
+              <div class="flex justify-between text-[11px] text-slate-400">
+                <span>Rp 1.000</span>
+                <span>Rp 5.000</span>
+                <span>Rp 10.000</span>
               </div>
             </div>
-            <div class="flex gap-4 items-start">
-              <div class="w-8 h-8 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center font-bold shrink-0">3</div>
-              <div>
-                <h4 class="font-bold text-slate-900">Panduan Perawatan & Deep Cleaning</h4>
-                <p class="text-sm text-slate-500">Edukasi rutin e-cleaning dan deep cleaning berkala agar performa pelat tetap prima.</p>
-              </div>
+
+            <p class="text-xs text-slate-400 italic">
+              *Catatan: Keuntungan belum termasuk komisi referral downline dan bonus poin reward transaksi bulanan.
+            </p>
+          </div>
+
+          <!-- Result Card -->
+          <div class="md:col-span-5 bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/15 text-center space-y-4">
+            <div>
+              <span class="text-xs text-cyan-200 uppercase font-semibold">Estimasi Profit Harian</span>
+              <div class="text-2xl font-extrabold text-white mt-1" id="daily-profit-display">Rp 125.000</div>
+            </div>
+
+            <div class="border-t border-white/10 pt-4">
+              <span class="text-xs text-emerald-300 uppercase font-bold tracking-wider">Potensi Profit Bulanan</span>
+              <div class="text-3xl sm:text-4xl font-extrabold text-emerald-400 mt-1" id="monthly-profit-display">Rp 3.750.000</div>
+              <span class="text-[11px] text-slate-300 block mt-1">(Dihitung 30 Hari Aktif)</span>
+            </div>
+
+            <a href="#download" class="block w-full py-2.5 rounded-xl text-xs font-bold text-slate-900 bg-cyan-400 hover:bg-cyan-300 transition-colors shadow-lg shadow-cyan-400/20">
+              Mulai Raih Keuntungan Ini
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FITUR UNGGULAN UNTUK AGEN ================= -->
+  <section id="fitur" class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs uppercase font-bold tracking-widest text-cyan-600 mb-2">Dirancang Khusus Mitra Konter</h2>
+        <p class="text-3xl sm:text-4xl font-extrabold text-slate-900">Fitur Cerdas untuk Kelola Bisnis Anda</p>
+        <p class="mt-2 text-slate-600 text-sm sm:text-base">Prastica Reload dibekali tool operasional lengkap untuk meningkatkan kredibilitas toko Anda di mata pembeli.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Feature 1 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 rounded-xl bg-cyan-100 text-cyan-700 flex items-center justify-center mb-4">
+            <i data-lucide="printer" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-lg mb-2">Cetak Struk Bluetooth</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Support thermal printer mini ukuran 58mm & 80mm. Atur harga jual, nama toko Anda, dan pesan footer struk secara fleksibel.
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center mb-4">
+            <i data-lucide="file-spreadsheet" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-lg mb-2">Rekap Keuntungan Rinci</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Pantau arus kas masuk dan laba bersih per transaksi harian. Unduh laporan pembukuan rapi dalam format PDF atau Excel.
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center mb-4">
+            <i data-lucide="users" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-lg mb-2">Sistem Downline & Pasif</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Daftarkan agen di bawah jaringan Anda dengan kode referral. Dapatkan komisi mark-up dari tiap transaksi mereka yang otomatis masuk ke saldo.
+          </p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 rounded-xl bg-rose-100 text-rose-700 flex items-center justify-center mb-4">
+            <i data-lucide="book-open-check" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-lg mb-2">Buku Catatan Piutang</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Catat pelanggan konter yang bayar nanti secara otomatis. Notifikasi pengingat jatuh tempo langsung tersimpan rapi tanpa buku manual.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONI AGEN ================= -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs uppercase font-bold tracking-widest text-cyan-600 mb-2">Pengalaman Mitra</h2>
+        <p class="text-3xl sm:text-4xl font-extrabold text-slate-900">Kata Mereka yang Telah Sukses</p>
+        <p class="mt-2 text-slate-600 text-sm sm:text-base">Ribuan konter di pulau Jawa, Sumatera, hingga pelosok Indonesia mempercayakan jalur transaksi kepada Prastica Reload.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Testimoni 1 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex text-amber-400 gap-0.5">
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            </div>
+            <p class="text-slate-700 text-sm leading-relaxed italic">
+              "Paling suka sama kecepatan servernya. Pas jam sibuk maghrib biasanya aplikasi lain sering pending, tapi di Prastica Reload SN pulsa dan token PLN keluar dalam hitungan detik."
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-200 mt-4 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center text-sm">
+              AR
+            </div>
+            <div>
+              <h4 class="font-bold text-sm text-slate-900">Ahmad Riyadi</h4>
+              <p class="text-xs text-slate-500">Konter 'Berkah Cell', Bekasi</p>
             </div>
           </div>
         </div>
 
-        <div class="bg-blue-50 border border-blue-100 rounded-3xl p-8 lg:p-10 text-center">
-          <div class="w-16 h-16 bg-blue-600 text-white rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-md">
-            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        <!-- Testimoni 2 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex text-amber-400 gap-0.5">
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            </div>
+            <p class="text-slate-700 text-sm leading-relaxed italic">
+              "Fitur cetak struk bluetooth sangat membantu toko saya terlihat lebih profesional. CS WhatsApp nya juga responsif banget saat ada pertanyaan saldo deposit."
+            </p>
           </div>
-          <h4 class="text-2xl font-bold text-slate-900">Siap Pasang di Rumah Anda</h4>
-          <p class="mt-3 text-slate-600 text-sm max-w-sm mx-auto">Daftarkan alamat Anda untuk konsultasi langsung, survei air keran, dan presentasi produk di tempat.</p>
-          <div class="mt-8">
-            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20jadwalkan%20survei%20dan%20instalasi%20mesin%20Enagic" target="_blank"
-               class="inline-block w-full py-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold transition shadow-md">
-              Hubungi Spesialis Kami via WhatsApp
-            </a>
+          <div class="pt-4 border-t border-slate-200 mt-4 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-cyan-600 text-white font-bold flex items-center justify-center text-sm">
+              DS
+            </div>
+            <div>
+              <h4 class="font-bold text-sm text-slate-900">Dewi Sartika</h4>
+              <p class="text-xs text-slate-500">Pemilik Toko Kelontong & PPOB, Palembang</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimoni 3 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex text-amber-400 gap-0.5">
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            </div>
+            <p class="text-slate-700 text-sm leading-relaxed italic">
+              "Harga paket data Telkomsel & Indosat disini selisihnya lumayan dibanding agen lain, untung per transaksi bisa dapet Rp 2.000 sampai Rp 4.000 bersih."
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-200 mt-4 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-emerald-600 text-white font-bold flex items-center justify-center text-sm">
+              HN
+            </div>
+            <div>
+              <h4 class="font-bold text-sm text-slate-900">Hendra Novian</h4>
+              <p class="text-xs text-slate-500">Master Agen, Surabaya</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FAQ SECTION -->
-  <section id="faq" class="py-20 bg-slate-50">
+  <!-- ================= FAQ SECTION (ACCORDION) ================= -->
+  <section id="faq" class="py-20 bg-slate-50 border-t border-slate-200">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <h2 class="text-xs font-bold tracking-widest text-blue-600 uppercase mb-2">Tanya Jawab</h2>
+      <div class="text-center mb-12">
+        <h2 class="text-xs uppercase font-bold tracking-widest text-cyan-600 mb-2">Pusat Bantuan</h2>
         <p class="text-3xl font-extrabold text-slate-900">Pertanyaan yang Sering Diajukan</p>
       </div>
 
       <div class="space-y-4">
-        <details class="group bg-white p-6 rounded-2xl border border-slate-200 transition">
-          <summary class="flex justify-between items-center font-bold text-slate-900 cursor-pointer list-none">
-            <span>Apakah mesin ini bisa langsung dipasang ke air sumur atau PDAM?</span>
-            <span class="text-blue-600 group-open:rotate-180 transition">&darr;</span>
-          </summary>
-          <p class="mt-4 text-sm text-slate-600 leading-relaxed">
-            Mesin Enagic dirancang memproses air yang sudah memenuhi syarat air layak konsumsi. Jika menggunakan PDAM atau sumur dengan TDS tinggi/berlumpur, kami memasang sistem pre-filter sedimen dan karbon aktif terlebih dahulu sebelum air masuk ke mesin.
-          </p>
-        </details>
+        <!-- Item 1 -->
+        <div class="border border-slate-200 bg-white rounded-2xl overflow-hidden shadow-sm">
+          <button onclick="toggleFaq(1)" class="w-full px-6 py-4 text-left font-bold text-slate-800 flex justify-between items-center hover:bg-slate-50 transition-colors">
+            <span>Bagaimana cara mendaftar menjadi Agen Prastica Reload?</span>
+            <i id="faq-icon-1" data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform"></i>
+          </button>
+          <div id="faq-ans-1" class="hidden px-6 pb-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            Pendaftaran 100% GRATIS. Anda cukup mengunduh aplikasi Prastica Reload, pilih menu <strong>Daftar Baru</strong>, masukkan Nama Usaha dan Nomor WhatsApp aktif. Akun Anda langsung aktif dalam 1 menit tanpa syarat rumit.
+          </div>
+        </div>
 
-        <details class="group bg-white p-6 rounded-2xl border border-slate-200 transition">
-          <summary class="flex justify-between items-center font-bold text-slate-900 cursor-pointer list-none">
-            <span>Apakah pembelian mesin mendapatkan garansi resmi?</span>
-            <span class="text-blue-600 group-open:rotate-180 transition">&darr;</span>
-          </summary>
-          <p class="mt-4 text-sm text-slate-600 leading-relaxed">
-            Ya, semua unit mesin kami adalah 100% original dari Enagic dengan garansi resmi pabrikan (3 hingga 5 tahun tergantung tipe unit). Garansi mencakup servis dan suku cadang asli di service center resmi.
-          </p>
-        </details>
+        <!-- Item 2 -->
+        <div class="border border-slate-200 bg-white rounded-2xl overflow-hidden shadow-sm">
+          <button onclick="toggleFaq(2)" class="w-full px-6 py-4 text-left font-bold text-slate-800 flex justify-between items-center hover:bg-slate-50 transition-colors">
+            <span>Berapa minimal saldo awal untuk mulai bertransaksi?</span>
+            <i id="faq-icon-2" data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform"></i>
+          </button>
+          <div id="faq-ans-2" class="hidden px-6 pb-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            Minimal deposit saldo awal sangat terjangkau, yaitu mulai dari <strong>Rp 10.000</strong>. Anda sudah bisa mulai melayani pembelian pulsa, kuota paket data, dan token listrik pelanggan.
+          </div>
+        </div>
 
-        <details class="group bg-white p-6 rounded-2xl border border-slate-200 transition">
-          <summary class="flex justify-between items-center font-bold text-slate-900 cursor-pointer list-none">
-            <span>Apakah melayani pengiriman dan pemasangan ke luar kota?</span>
-            <span class="text-blue-600 group-open:rotate-180 transition">&darr;</span>
-          </summary>
-          <p class="mt-4 text-sm text-slate-600 leading-relaxed">
-            Tentu. Kami melayani pengiriman ke seluruh wilayah Indonesia dengan pengemasan aman dan panduan pemasangan video call langsung atau teknisi rekanan di berbagai kota besar.
-          </p>
-        </details>
+        <!-- Item 3 -->
+        <div class="border border-slate-200 bg-white rounded-2xl overflow-hidden shadow-sm">
+          <button onclick="toggleFaq(3)" class="w-full px-6 py-4 text-left font-bold text-slate-800 flex justify-between items-center hover:bg-slate-50 transition-colors">
+            <span>Apakah saldo deposit memiliki masa kedaluwarsa?</span>
+            <i id="faq-icon-3" data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform"></i>
+          </button>
+          <div id="faq-ans-3" class="hidden px-6 pb-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            Tidak ada. Saldo deposit Anda di Prastica Reload aman selamanya, tidak akan hangus atau terpotong biaya administrasi bulanan sepeser pun.
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="border border-slate-200 bg-white rounded-2xl overflow-hidden shadow-sm">
+          <button onclick="toggleFaq(4)" class="w-full px-6 py-4 text-left font-bold text-slate-800 flex justify-between items-center hover:bg-slate-50 transition-colors">
+            <span>Bagaimana jika terjadi kendala pengisian pulsa atau saldo pending?</span>
+            <i id="faq-icon-4" data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform"></i>
+          </button>
+          <div id="faq-ans-4" class="hidden px-6 pb-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            Tim Layanan Pelanggan (CS) kami aktif melayani setiap hari melalui WhatsApp (0855-1199-002) dan Telegram (@PRASTICARELOAD_CARE). Tim kami akan memeriksa status ke provider secara langsung hingga transaksi sukses atau saldo direfund 100%.
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-        <div>
-          <span class="text-xl font-bold tracking-tight text-white block">ENAGIC<span class="text-blue-500">.ID</span></span>
-          <p class="text-xs text-slate-500 mt-2 leading-relaxed">
-            Distributor Resmi Mesin Pengolah Air Enagic Kangen Water Indonesia. Menyediakan unit baru, aksesoris original, filter pengganti, dan cairan pembersih.
-          </p>
-        </div>
-        <div>
-          <p class="text-sm font-semibold text-slate-200 mb-2">Kontak Layanan</p>
-          <p class="text-xs text-slate-400">WhatsApp: +62 812-3456-7890</p>
-          <p class="text-xs text-slate-400 mt-1">Layanan Servis & Edukasi: Senin - Sabtu (08:00 - 17:00 WIB)</p>
-        </div>
-        <div>
-          <p class="text-sm font-semibold text-slate-200 mb-2">Disclaimer Resmi</p>
-          <p class="text-[11px] text-slate-500 leading-relaxed">
-            Website ini dikelola oleh Independent Distributor resmi Enagic. Kangen Water® dan Leveluk® adalah merek dagang terdaftar milik Enagic Co., Ltd. Mesin ini berfungsi sebagai perangkat pengolah air rumah tangga.
-          </p>
+  <!-- ================= DOWNLOAD / CTA SECTION ================= -->
+  <section id="download" class="py-20 bg-gradient-to-b from-slate-900 to-slate-950 text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="max-w-3xl mx-auto text-center space-y-6">
+        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/20 text-cyan-300 text-xs font-bold uppercase tracking-wider">
+          <i data-lucide="sparkles" class="w-4 h-4"></i> Unduh Sekarang Juga
+        </span>
+        <h2 class="text-3xl sm:text-5xl font-black tracking-tight leading-tight">
+          Siap Mengembangkan Usaha Konter Pulsa Anda?
+        </h2>
+        <p class="text-slate-300 text-base sm:text-lg">
+          Bergabunglah bersama 50.000+ mitra konter di seluruh Indonesia. Raih kemudahan transaksi cepat dengan harga distributor terbaik dari CV Mitra Pulsa Mandiri.
+        </p>
+
+        <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="https://prastica-reload.id.aptoide.com/app" target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-extrabold shadow-lg shadow-cyan-500/25 flex items-center justify-center gap-3 transition-transform hover:-translate-y-1">
+            <i data-lucide="download" class="w-5 h-5"></i>
+            <span>Download APK Resmi (Aptoide)</span>
+          </a>
+          <a href="https://wa.me/628551199002?text=Halo%20Prastica%20Reload,%20bantu%20saya%20daftar%20agen" target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold flex items-center justify-center gap-3 transition-colors">
+            <i data-lucide="message-square" class="w-5 h-5 text-emerald-400"></i>
+            <span>Daftar via CS WhatsApp</span>
+          </a>
         </div>
       </div>
-      <div class="border-t border-slate-800/80 pt-6 text-center text-xs text-slate-600">
-        &copy; 2026 Authorized Enagic Distributor Indonesia. All rights reserved.
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer id="kontak" class="bg-slate-950 text-slate-400 border-t border-slate-900 pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+        
+        <!-- Company Info (2 Cols) -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-xl bg-cyan-500 flex items-center justify-center text-slate-950 font-black">
+              <i data-lucide="zap" class="w-5 h-5"></i>
+            </div>
+            <span class="text-xl font-bold text-white tracking-tight">Prastica Reload</span>
+          </div>
+          <p class="text-sm leading-relaxed text-slate-400">
+            Aplikasi server distributor pulsa elektrik all-operator, kuota internet, token listrik PLN, dan pembayaran loket PPOB terlengkap di bawah naungan legalitas resmi <strong>CV Mitra Pulsa Mandiri</strong>.
+          </p>
+          <div class="text-xs text-slate-500 space-y-1">
+            <p class="flex items-start gap-2">
+              <i data-lucide="map-pin" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i>
+              <span>Kecamatan Cakung, Kota Jakarta Timur, DKI Jakarta - Indonesia</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <i data-lucide="globe" class="w-4 h-4 text-cyan-400 shrink-0"></i>
+              <span>Situs Induk Perusahaan: <a href="https://mpm.id" target="_blank" class="text-cyan-400 hover:underline">mpm.id</a></span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Layanan -->
+        <div class="space-y-3">
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider">Layanan</h4>
+          <ul class="text-sm space-y-2">
+            <li><a href="#layanan" class="hover:text-cyan-400 transition-colors">Pulsa & Paket Data</a></li>
+            <li><a href="#layanan" class="hover:text-cyan-400 transition-colors">Top Up E-Money & E-Wallet</a></li>
+            <li><a href="#layanan" class="hover:text-cyan-400 transition-colors">Loket Pembayaran PPOB</a></li>
+            <li><a href="#layanan" class="hover:text-cyan-400 transition-colors">Voucher Game Online</a></li>
+            <li><a href="#fitur" class="hover:text-cyan-400 transition-colors">Cetak Struk Bluetooth</a></li>
+          </ul>
+        </div>
+
+        <!-- Mitra & Bantuan -->
+        <div class="space-y-3">
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider">Bantuan</h4>
+          <ul class="text-sm space-y-2">
+            <li><a href="#faq" class="hover:text-cyan-400 transition-colors">Pusat Bantuan & FAQ</a></li>
+            <li><a href="#simulasi" class="hover:text-cyan-400 transition-colors">Kalkulator Untung Konter</a></li>
+            <li><a href="#keunggulan" class="hover:text-cyan-400 transition-colors">Metode Deposit Saldo</a></li>
+            <li><a href="https://wa.me/628551199002" target="_blank" class="hover:text-cyan-400 transition-colors">Panduan Agen Baru</a></li>
+          </ul>
+        </div>
+
+        <!-- Kontak Layanan CS -->
+        <div class="space-y-3">
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider">Kontak CS Resmi</h4>
+          <div class="text-sm space-y-2.5">
+            <a href="https://wa.me/628551199002" target="_blank" class="flex items-center gap-2 hover:text-cyan-400 transition-colors">
+              <i data-lucide="phone" class="w-4 h-4 text-emerald-400"></i>
+              <span>0855-1199-002 (WhatsApp)</span>
+            </a>
+            <a href="https://t.me/PRASTICARELOAD_CARE" target="_blank" class="flex items-center gap-2 hover:text-cyan-400 transition-colors">
+              <i data-lucide="send" class="w-4 h-4 text-sky-400"></i>
+              <span>@PRASTICARELOAD_CARE</span>
+            </a>
+            <div class="flex items-center gap-2 text-slate-400">
+              <i data-lucide="clock" class="w-4 h-4 text-cyan-400"></i>
+              <span>Layanan Operasional 24 Jam</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright Bar -->
+      <div class="pt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        <p>&copy; <span id="year"></span> Prastica Reload &middot; CV Mitra Pulsa Mandiri. Seluruh hak cipta dilindungi undang-undang.</p>
+        <div class="flex gap-4">
+          <a href="#" class="hover:text-slate-400">Syarat & Ketentuan</a>
+          <a href="#" class="hover:text-slate-400">Kebijakan Privasi</a>
+        </div>
       </div>
     </div>
   </footer>
 
+  <!-- ================= LOGIKA INTERAKTIF (JAVASCRIPT) ================= -->
+  <script>
+    // Inisialisasi Lucide Icons
+    lucide.createIcons();
+
+    // Set Copyright Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile Navbar Toggle
+    const mobileBtn = document.getElementById('mobile-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when link clicked
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // Tabbed Product Catalog Logic
+    function switchTab(tabName) {
+      // Sembunyikan semua panel
+      const panels = document.querySelectorAll('.tab-panel');
+      panels.forEach(panel => panel.classList.add('hidden'));
+
+      // Reset style tombol tab
+      const buttons = document.querySelectorAll('.tab-btn');
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-brand-600', 'text-white', 'shadow-md', 'shadow-brand-500/20');
+        btn.classList.add('bg-white', 'text-slate-600', 'border', 'border-slate-200');
+      });
+
+      // Tampilkan panel yang dipilih
+      const activePanel = document.getElementById(`tab-content-${tabName}`);
+      if (activePanel) {
+        activePanel.classList.remove('hidden');
+      }
+
+      // Aktifkan style tombol yang dipilih
+      const activeBtn = document.getElementById(`tab-btn-${tabName}`);
+      if (activeBtn) {
+        activeBtn.classList.remove('bg-white', 'text-slate-600', 'border', 'border-slate-200');
+        activeBtn.classList.add('bg-brand-600', 'text-white', 'shadow-md', 'shadow-brand-500/20');
+      }
+
+      // Re-render icon lucide jika tab berisi icon baru
+      lucide.createIcons();
+    }
+
+    // Kalkulator Simulasi Untung Konter
+    const trxRange = document.getElementById('trx-range');
+    const profitRange = document.getElementById('profit-range');
+    const trxValDisplay = document.getElementById('trx-val-display');
+    const profitValDisplay = document.getElementById('profit-val-display');
+    const dailyProfitDisplay = document.getElementById('daily-profit-display');
+    const monthlyProfitDisplay = document.getElementById('monthly-profit-display');
+
+    function formatRupiah(num) {
+      return 'Rp ' + Number(num).toLocaleString('id-ID');
+    }
+
+    function calculateProfit() {
+      const trx = parseInt(trxRange.value, 10);
+      const profit = parseInt(profitRange.value, 10);
+
+      trxValDisplay.textContent = `${trx} Transaksi/hari`;
+      profitValDisplay.textContent = formatRupiah(profit);
+
+      const daily = trx * profit;
+      const monthly = daily * 30;
+
+      dailyProfitDisplay.textContent = formatRupiah(daily);
+      monthlyProfitDisplay.textContent = formatRupiah(monthly);
+    }
+
+    trxRange.addEventListener('input', calculateProfit);
+    profitRange.addEventListener('input', calculateProfit);
+
+    // Initial calculation
+    calculateProfit();
+
+    // FAQ Accordion Toggle
+    function toggleFaq(index) {
+      const ans = document.getElementById(`faq-ans-${index}`);
+      const icon = document.getElementById(`faq-icon-${index}`);
+
+      if (ans.classList.contains('hidden')) {
+        ans.classList.remove('hidden');
+        icon.classList.add('rotate-180');
+      } else {
+        ans.classList.add('hidden');
+        icon.classList.remove('rotate-180');
+      }
+    }
+  </script>
 </body>
 </html>
